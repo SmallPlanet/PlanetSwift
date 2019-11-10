@@ -78,7 +78,9 @@ open class <%= FULL_NAME_CAMEL %> {
         
 		for (attribute, value) in element.attributes {
 			if let valueString = value as? String, let attributeString = attribute as? String {
-				entity.setAttribute(valueString, key: attributeString)
+				if attributeString != "externalClass" {
+					entity.setAttribute(valueString, key: attributeString)
+				}
 			}
 		}
 		
