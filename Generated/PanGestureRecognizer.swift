@@ -12,8 +12,8 @@ public class PanGestureRecognizer: PanGestureRecognizerBase {
 			return panRecognizer
 		}
 		set {
-			if newValue is UIPanGestureRecognizer {
-				panRecognizer = newValue as! UIPanGestureRecognizer
+            if let newValue = newValue as? UIPanGestureRecognizer {
+				panRecognizer = newValue
 			}
 		}
 	}
@@ -22,12 +22,12 @@ public class PanGestureRecognizer: PanGestureRecognizerBase {
 		super.gaxbPrepare()
 		
         #if os(iOS)
-            if maximumNumberOfTouches != nil {
-                panRecognizer.maximumNumberOfTouches = maximumNumberOfTouches!
-            }
-            if minimumNumberOfTouches != nil {
-                panRecognizer.minimumNumberOfTouches = minimumNumberOfTouches!
-            }
+        if let maximumNumberOfTouches = maximumNumberOfTouches {
+            panRecognizer.maximumNumberOfTouches = maximumNumberOfTouches
+        }
+        if let minimumNumberOfTouches = minimumNumberOfTouches {
+            panRecognizer.minimumNumberOfTouches = minimumNumberOfTouches
+        }
         #endif
 	}
 }

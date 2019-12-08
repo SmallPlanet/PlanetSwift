@@ -10,18 +10,15 @@ public class Notification: NotificationBase {
     
     open override func gaxbPrepare() {
         super.gaxbPrepare()
-        if scopedName != nil {
+        if let scopedName = scopedName {
             (self.scopeObject, self.name) = self.parseNotification(scopedName)
         }
     }
     
     public var selector: Selector? {
         get {
-            if name != nil {
-                return Selector(name! + ":")
-            } else {
-                return nil
-            }
+            guard let name = name else { return nil }
+            return Selector(name + ":")
         }
     }
         

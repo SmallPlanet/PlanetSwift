@@ -12,8 +12,8 @@ public class WebView: WebViewBase {
             return webview
         }
         set {
-            if newValue is UIWebView {
-                webview = newValue as! UIWebView
+            if let newValue = newValue as? UIWebView {
+                webview = newValue
             }
         }
     }
@@ -21,22 +21,21 @@ public class WebView: WebViewBase {
     open override func gaxbPrepare() {
         super.gaxbPrepare()
         
-        if url != nil {
-            let requestURL = URL(string: url!)
-            let request = URLRequest(url: requestURL!)
+        if let url = url, let requestURL = URL(string: url) {
+            let request = URLRequest(url: requestURL)
             webview.loadRequest(request)
         }
-        if scalesToFit != nil {
-            webview.scalesPageToFit = scalesToFit!
+        if let scalesToFit = scalesToFit {
+            webview.scalesPageToFit = scalesToFit
         }
-        if suppressesIncrementalRendering != nil {
-            webview.suppressesIncrementalRendering = suppressesIncrementalRendering!
+        if let suppressesIncrementalRendering = suppressesIncrementalRendering {
+            webview.suppressesIncrementalRendering = suppressesIncrementalRendering
         }
-        if allowsInlineMediaPlayback != nil {
-            webview.allowsInlineMediaPlayback = allowsInlineMediaPlayback!
+        if let allowsInlineMediaPlayback = allowsInlineMediaPlayback {
+            webview.allowsInlineMediaPlayback = allowsInlineMediaPlayback
         }
-        if mediaPlaybackRequiresUserAction != nil {
-            webview.mediaPlaybackRequiresUserAction = mediaPlaybackRequiresUserAction!
+        if let mediaPlaybackRequiresUserAction = mediaPlaybackRequiresUserAction {
+            webview.mediaPlaybackRequiresUserAction = mediaPlaybackRequiresUserAction
         }
     }
 }

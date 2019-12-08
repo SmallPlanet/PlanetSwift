@@ -6,19 +6,15 @@ import UIKit
 
 public class CollectionView: CollectionViewBase {
     lazy public var collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: UICollectionViewFlowLayout())
-    override open var view: UIView {
+    override public var view: UIView {
         get {
             return collectionView
         }
         set {
-            if newValue is UICollectionView {
-                collectionView = newValue as! UICollectionView
+            if let newValue = newValue as? UICollectionView {
+                collectionView = newValue
             }
         }
-    }
-    
-    open override func gaxbPrepare() {
-        super.gaxbPrepare()
     }
     
     // MARK: - Layout

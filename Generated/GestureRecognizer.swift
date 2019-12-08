@@ -14,18 +14,18 @@ open class GestureRecognizer: GestureRecognizerBase {
 		
 		if let recognizer = recognizer {
 			
-			if cancelsTouchesInView != nil {
-				recognizer.cancelsTouchesInView = cancelsTouchesInView!
+			if let cancelsTouchesInView = cancelsTouchesInView {
+				recognizer.cancelsTouchesInView = cancelsTouchesInView
 			}
-			if delaysTouchesBegan != nil {
-				recognizer.delaysTouchesBegan = delaysTouchesBegan!
+			if let delaysTouchesBegan = delaysTouchesBegan {
+				recognizer.delaysTouchesBegan = delaysTouchesBegan
 			}
-			if delaysTouchesEnded != nil {
-				recognizer.delaysTouchesEnded = delaysTouchesEnded!
+			if let delaysTouchesEnded = delaysTouchesEnded {
+				recognizer.delaysTouchesEnded = delaysTouchesEnded
 			}
 			
-			if onStateChange != nil {
-				helper.delegate = self;
+			if let _ = onStateChange {
+				helper.delegate = self
 				recognizer.addTarget(helper, action: #selector(GestureRecognizerHelper.recognizerStateDidChange(_:)))
 			}
 		}
@@ -43,10 +43,10 @@ open class GestureRecognizer: GestureRecognizerBase {
 	}
 	
 	func recognizerStateDidChange(_ recognizer:UIGestureRecognizer) {
-		if onStateChange != nil {
+		if let onStateChange = onStateChange {
 			let (scopeObject, name) = self.parseNotification(onStateChange)
-			if name != nil {
-				NotificationCenter.`default`.post(name: Foundation.Notification.Name(rawValue: name!), object: scopeObject)
+			if let name = name {
+				NotificationCenter.`default`.post(name: Foundation.Notification.Name(rawValue: name), object: scopeObject)
 			}
 		}
 	}

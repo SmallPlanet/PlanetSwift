@@ -11,8 +11,8 @@ open class ImageView: ImageViewBase {
             return imageView
         }
         set {
-            if newValue is UIImageView {
-                imageView = newValue as! UIImageView
+            if let newValue = newValue as? UIImageView {
+                imageView = newValue
             }
         }
     }

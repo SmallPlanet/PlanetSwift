@@ -65,15 +65,13 @@ public class Constraint: ConstraintBase {
 		if let item = self.firstItem {
 			if item == Constraint_parentKeyword {
 
-				//avoid an infinite loop if both are looking for super view
-				if self.secondItem != nil && self.secondItem! == Constraint_parentKeyword {
+				// avoid an infinite loop if both are looking for super view
+				if let secondItem = secondItem, secondItem == Constraint_parentKeyword {
 					return nil
 				}
 				return secondView()?.superview
-			}
-			else {
-				let itemObj:AnyObject? = (scope() as? Object)?.objectForId(item)
-				if let itemView = itemObj as? View {
+			} else {
+                if let itemView = (scope() as? Object)?.objectForId(item) as? View {
 					return itemView.view
 				}
 			}
@@ -85,15 +83,14 @@ public class Constraint: ConstraintBase {
 		if let item = self.secondItem {
 			if item == Constraint_parentKeyword {
 
-				//avoid an infinite loop if both are looking for super view
-				if self.firstItem != nil && self.firstItem! == Constraint_parentKeyword {
+				// avoid an infinite loop if both are looking for super view
+				if let firstItem = firstItem, firstItem == Constraint_parentKeyword {
 					return nil
 				}
 				return firstView()?.superview
 			}
 			else {
-				let itemObj:AnyObject? = (scope() as? Object)?.objectForId(item)
-				if let itemView = itemObj as? View {
+                if let itemView = (scope() as? Object)?.objectForId(item) as? View {
 					return itemView.view
 				}
 			}
@@ -122,8 +119,8 @@ public class Constraint: ConstraintBase {
             constraints.forEach { $0.priority = UILayoutPriority(rawValue: priority) }
 
             // attempt to figure out which view to add the constraint to, iOS will crash if we pick the wrong one
-            if second != nil && first.isDescendant(of: second!) {
-                second!.addConstraints(constraints)
+            if let second = second, first.isDescendant(of: second) {
+                second.addConstraints(constraints)
             } else {
                 first.superview?.addConstraints(constraints)
             }
@@ -135,6 +132,7 @@ public class Constraint: ConstraintBase {
     public func makeConstraints() -> [NSLayoutConstraint] {
         guard let first = firstView() else { return [] }
         let second = secondView()
+        
         switch ruleSet {
         case .fillSuperview:
             let superview = first.superview
@@ -175,16 +173,15 @@ public class Constraint: ConstraintBase {
                 assertionFailure("First layout attribute invalid: \(firstAttribute)")
             }
             let secondLayoutAttribute = Constraint.layoutAttributeFromEnum(secondAttribute)
-           return [NSLayoutConstraint(item: first,
-                attribute: firstLayoutAttribute,
-                relatedBy: Constraint.layoutRelationFromEnum(relation),
-                toItem: second,
-                attribute: secondLayoutAttribute,
-                multiplier: CGFloat(multiplier),
-                constant: CGFloat(constant))]
+            return [NSLayoutConstraint(item: first,
+                                       attribute: firstLayoutAttribute,
+                                       relatedBy: Constraint.layoutRelationFromEnum(relation),
+                                       toItem: second,
+                                       attribute: secondLayoutAttribute,
+                                       multiplier: CGFloat(multiplier),
+                                       constant: CGFloat(constant))]
         }
     }
-
 }
 
 extension NSLayoutConstraint {

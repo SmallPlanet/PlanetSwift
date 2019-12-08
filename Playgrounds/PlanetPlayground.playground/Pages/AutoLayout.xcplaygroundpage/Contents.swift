@@ -50,7 +50,6 @@ let xml = """
     <Constraint firstItem="root" firstAttribute="right" secondItem="circle" secondAttribute="right" constant="50"/>
     <Constraint firstItem="root" firstAttribute="bottom" secondItem="circle" secondAttribute="bottom" constant="50"/>
 
-
 </Scene>
 """
 

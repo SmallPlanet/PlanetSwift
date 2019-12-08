@@ -11,8 +11,8 @@ public class ScrollView: ScrollViewBase {
 			return scrollView
 		}
 		set {
-			if newValue is UIScrollView {
-				scrollView = newValue as! UIScrollView
+			if let newValue = newValue as? UIScrollView {
+				scrollView = newValue
 			}
 		}
 	}
@@ -20,19 +20,19 @@ public class ScrollView: ScrollViewBase {
 	open override func gaxbPrepare() {
 		super.gaxbPrepare()
 		
-		if contentSize != nil {
-			scrollView.contentSize = contentSize!
+		if let contentSize = contentSize {
+			scrollView.contentSize = contentSize
 		}
-#if os(iOS)
-		if pagingEnabled != nil {
-			scrollView.isPagingEnabled = pagingEnabled!
+        #if os(iOS)
+		if let pagingEnabled = pagingEnabled {
+			scrollView.isPagingEnabled = pagingEnabled
 		}
-#endif
-		if showsHorizontalScrollIndicator != nil {
-			scrollView.showsHorizontalScrollIndicator = showsHorizontalScrollIndicator!
+        #endif
+		if let showsHorizontalScrollIndicator = showsHorizontalScrollIndicator {
+			scrollView.showsHorizontalScrollIndicator = showsHorizontalScrollIndicator
 		}
-		if showsVerticalScrollIndicator != nil {
-			scrollView.showsVerticalScrollIndicator = showsVerticalScrollIndicator!
+		if let showsVerticalScrollIndicator = showsVerticalScrollIndicator {
+			scrollView.showsVerticalScrollIndicator = showsVerticalScrollIndicator
 		}
 	}
 }

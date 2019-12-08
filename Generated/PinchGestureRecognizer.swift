@@ -11,8 +11,8 @@ public class PinchGestureRecognizer: PinchGestureRecognizerBase {
 			return pinchRecognizer
 		}
 		set {
-			if newValue is UIPinchGestureRecognizer {
-				pinchRecognizer = newValue as! UIPinchGestureRecognizer
+			if let newValue = newValue as? UIPinchGestureRecognizer {
+				pinchRecognizer = newValue
 			}
 		}
 	}

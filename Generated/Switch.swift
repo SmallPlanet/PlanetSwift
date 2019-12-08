@@ -12,8 +12,8 @@ public class Switch: SwitchBase {
             return switch_
         }
         set {
-            if newValue is UISwitch {
-                switch_ = newValue as! UISwitch
+            if let newValue = newValue as? UISwitch {
+                switch_ = newValue
             }
         }
     }

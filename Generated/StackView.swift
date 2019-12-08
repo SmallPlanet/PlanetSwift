@@ -19,8 +19,8 @@ public class StackView: StackViewBase {
         }
         set {
             if #available(iOS 9.0, *) {
-                if newValue is UIStackView {
-                    stackView = newValue as! UIStackView
+                if let newValue = newValue as? UIStackView {
+                    stackView = newValue
                 }
             }
         }

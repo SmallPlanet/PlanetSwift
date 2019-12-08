@@ -11,8 +11,8 @@ public class ActivityIndicatorView: ActivityIndicatorViewBase {
             return activityIndicator
         }
         set {
-            if newValue is UIActivityIndicatorView {
-                activityIndicator = newValue as! UIActivityIndicatorView
+            if let newValue = newValue as? UIActivityIndicatorView {
+                activityIndicator = newValue
             }
         }
     }
@@ -20,31 +20,31 @@ public class ActivityIndicatorView: ActivityIndicatorViewBase {
     open override func gaxbPrepare() {
         super.gaxbPrepare()
         
-        if startAnimating != nil {
-            NotificationCenter.`default`.addObserver(self, selector: #selector(ActivityIndicatorView.startAnimating(_:)), name:NSNotification.Name(rawValue: startAnimating!), object:nil)
+        if let startAnimating = startAnimating {
+            NotificationCenter.`default`.addObserver(self, selector: #selector(ActivityIndicatorView.startAnimating(_:)), name:NSNotification.Name(rawValue: startAnimating), object:nil)
         }
-        if stopAnimating != nil {
-            NotificationCenter.`default`.addObserver(self, selector: #selector(ActivityIndicatorView.stopAnimating(_:)), name:NSNotification.Name(rawValue: stopAnimating!), object:nil)
+        if let stopAnimating = stopAnimating {
+            NotificationCenter.`default`.addObserver(self, selector: #selector(ActivityIndicatorView.stopAnimating(_:)), name:NSNotification.Name(rawValue: stopAnimating), object:nil)
         }
-        if hidesWhenStopped != nil {
-            activityIndicator.hidesWhenStopped = hidesWhenStopped!
+        if let hidesWhenStopped = hidesWhenStopped {
+            activityIndicator.hidesWhenStopped = hidesWhenStopped
         }
         
-#if os(iOS)
-        if activityIndicatorViewStyle != nil {
-            activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.fromPlanetUIActivityIndicatorViewStyle(activityIndicatorViewStyle!)
+        #if os(iOS)
+        if let activityIndicatorViewStyle = activityIndicatorViewStyle {
+            activityIndicator.activityIndicatorViewStyle = .fromPlanetUIActivityIndicatorViewStyle(activityIndicatorViewStyle)
         }
-#endif
-        if color != nil {
-            activityIndicator.color = color!
+        #endif
+        if let color = color {
+            activityIndicator.color = color
         }
     }
     
-    @objc func startAnimating(_ note:Foundation.Notification) {
+    @objc func startAnimating(_ note: Foundation.Notification) {
         activityIndicator.startAnimating()
     }
     
-    @objc func stopAnimating(_ note:Foundation.Notification) {
+    @objc func stopAnimating(_ note: Foundation.Notification) {
         activityIndicator.stopAnimating()
     }
 }

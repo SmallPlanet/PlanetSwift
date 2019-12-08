@@ -11,8 +11,8 @@ public class PageControl: PageControlBase {
 			return pageControl
 		}
 		set {
-			if newValue is UIPageControl {
-				pageControl = newValue as! UIPageControl
+			if let newValue = newValue as? UIPageControl {
+				pageControl = newValue
 			}
 		}
 	}
@@ -20,14 +20,14 @@ public class PageControl: PageControlBase {
 	open override func gaxbPrepare() {
 		super.gaxbPrepare()
 		
-		if hidesForSinglePage != nil {
-			pageControl.hidesForSinglePage = hidesForSinglePage!
+		if let hidesForSinglePage = hidesForSinglePage {
+			pageControl.hidesForSinglePage = hidesForSinglePage
 		}
-		if pageIndicatorTintColor != nil {
-			pageControl.pageIndicatorTintColor = pageIndicatorTintColor!
+		if let pageIndicatorTintColor = pageIndicatorTintColor {
+			pageControl.pageIndicatorTintColor = pageIndicatorTintColor
 		}
-		if currentPageIndicatorTintColor != nil {
-			pageControl.currentPageIndicatorTintColor = currentPageIndicatorTintColor!
+		if let currentPageIndicatorTintColor = currentPageIndicatorTintColor {
+			pageControl.currentPageIndicatorTintColor = currentPageIndicatorTintColor
 		}
 	}
 }

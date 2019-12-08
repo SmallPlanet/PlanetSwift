@@ -18,28 +18,18 @@ public class PickerView: PickerViewBase {
         }
     }
     
-    override open var view: UIView {
+    override public var view: UIView {
         get {
             return picker
         }
         set {
-            if newValue is UIPickerView {
-                picker = newValue as! UIPickerView
+            if let newValue = newValue as? UIPickerView {
+                picker = newValue
             }
         }
     }
     
-    open override func gaxbPrepare() {
-        super.gaxbPrepare()
-        
-        //See below
-        /*pickerWrapper = PickerViewWrapper(components: 2, rows: 2)
-        
-        picker.delegate = pickerWrapper
-        picker.dataSource = pickerWrapper*/
-    }
-    
-    //Getting Dimensions
+    // Getting Dimensions
     public func numberOfComponents() -> Int {
         return picker.numberOfComponents
     }
@@ -52,7 +42,7 @@ public class PickerView: PickerViewBase {
         return picker.rowSize(forComponent: component)
     }
     
-    //Reloading
+    // Reloading
     public func reloadAll() {
         picker.reloadAllComponents()
     }
@@ -61,7 +51,7 @@ public class PickerView: PickerViewBase {
         picker.reloadComponent(component)
     }
     
-    //Selecting
+    // Selecting
     public func selectRow(_ row: Int, inComponent component: Int, animated animates: Bool) {
         picker.selectRow(row, inComponent: component, animated: animates)
     }

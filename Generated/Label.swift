@@ -18,21 +18,15 @@ public class Label: LabelBase {
             return label
         }
         set {
-            if newValue is PlanetLabel {
-                label = newValue as! PlanetLabel
+            if let newValue = newValue as? PlanetLabel {
+                label = newValue
             }
         }
     }
 	
     open override func gaxbPrepare() {
         super.gaxbPrepare()
-        var _paragraphStyle: NSMutableParagraphStyle?
-        var paragraphStyle: NSMutableParagraphStyle {
-            if _paragraphStyle == nil {
-                _paragraphStyle = NSMutableParagraphStyle()
-            }
-            return _paragraphStyle!
-        }
+        let paragraphStyle = NSMutableParagraphStyle()
 		
 		if let lineSpacing = lineSpacing {
             paragraphStyle.lineSpacing = CGFloat(lineSpacing)
@@ -66,30 +60,21 @@ public class Label: LabelBase {
 		
 		//attributes that are sensitive to the existence (or non-existence) of _paragraphStyle
 		if let textAlignment = textAlignment {
-			if _paragraphStyle != nil {
-				paragraphStyle.alignment = NSTextAlignment.fromPlanetUITextAlignment(textAlignment)
-			}
+            paragraphStyle.alignment = NSTextAlignment.fromPlanetUITextAlignment(textAlignment)
 			label.textAlignment = NSTextAlignment.fromPlanetUITextAlignment(textAlignment)
 		}
 		if let lineBreakMode = lineBreakMode {
-			if _paragraphStyle != nil {
-				paragraphStyle.lineBreakMode = NSLineBreakMode.fromPlanetUILineBreakMode(lineBreakMode)
-			}
+            paragraphStyle.lineBreakMode = NSLineBreakMode.fromPlanetUILineBreakMode(lineBreakMode)
 			label.lineBreakMode = NSLineBreakMode.fromPlanetUILineBreakMode(lineBreakMode)
 		}
         
         let localizedText = text.map{NSLocalizedString($0, comment: "")} ?? ""
-        
         checkUnlocalized(text, localized: localizedText)
         
-        if _paragraphStyle != nil {
-            let attributedString = NSMutableAttributedString(string: localizedText)
-            let attributes = [NSAttributedStringKey.paragraphStyle : paragraphStyle]
-            attributedString.setAttributes(attributes, range: NSRange(location: 0, length: attributedString.length))
-            label.attributedText = attributedString
-        } else {
-            label.text = localizedText
-        }
+        let attributedString = NSMutableAttributedString(string: localizedText)
+        let attributes = [NSAttributedStringKey.paragraphStyle : paragraphStyle]
+        attributedString.setAttributes(attributes, range: NSRange(location: 0, length: attributedString.length))
+        label.attributedText = attributedString
     }
     
     public func updateText(_ newText: String?) {

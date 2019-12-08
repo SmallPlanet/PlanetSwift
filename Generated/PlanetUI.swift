@@ -9,7 +9,7 @@ private var attemptedConfigLoad = false
 
 extension PlanetUI {
 	
-	//MARK: - config
+	// MARK: - config
 	
     public class func configForKey(_ key: String?) -> AnyObject? {
         guard let key = key else { return nil }
@@ -68,12 +68,12 @@ extension PlanetUI {
         }
     }
 	
-	//MARK: - processing expressions
+	// MARK: - processing expressions
 	
     public class func processExpressions(_ string: String) -> String {
 		let processedString = NSMutableString(string: string)
         checkLoadConfig()
-		if config != nil {
+		if let _ = config {
 			findAndReplaceExpressions(processedString, expressionName:"config", expressionEvaluatorBlock: configForKey)
 		}
         return processedString as String
@@ -104,7 +104,7 @@ extension PlanetUI {
 						let replaceLength = (endRange.location+endRange.length)-startRange.location
 						stringToSearch.replaceCharacters(in: NSMakeRange(startRange.location, replaceLength), with: replaceString as String)
 						
-						//adjust the search range because we just changed the length / posision of the search range by replacing stuff
+						// adjust the search range because we just changed the length / posision of the search range by replacing stuff
 						let adjustNum = replaceString.length - replaceLength
 						searchRange.location += adjustNum
 						searchRange.length = stringToSearch.length-searchRange.location
@@ -133,4 +133,20 @@ extension PlanetUI {
 	public class func GCDDelay(_ delayAmount:Double, block:@escaping (()->Void)) {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + delayAmount, execute: block)
 	}
+    
+}
+
+// MARK: - enum extensions
+
+extension PlanetUI.BlurEffect {
+    public var uiBlurEffect: UIBlurEffect {
+        switch self {
+        case .dark:
+            return UIBlurEffect(style: .dark)
+        case .light:
+            return UIBlurEffect(style: .light)
+        case .extraLight:
+            return UIBlurEffect(style: .extraLight)
+        }
+    }
 }

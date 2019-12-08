@@ -39,27 +39,18 @@ public class GaxbFactory: NSObject {
     }
     
     public class func factory(_ namespace: String) -> AnyObject? {
-        let className = namespace+"GaxbFactory"
-        if let factoryClass = NSClassFromString(className) as? NSObject.Type {
-            return factoryClass.init()
-        }
-        return nil
+        guard let factoryClass = NSClassFromString(namespace + "GaxbFactory") as? NSObject.Type else { return nil }
+        return factoryClass.init()
     }
     
     public class func element(_ namespace: String, name: String) -> GaxbElement? {
-        if let factory = self.factory(namespace) as? GaxbFactory
-        {
-            return factory.classWithName(name)
-        }
-        return nil
+        guard let factory = self.factory(namespace) as? GaxbFactory else { return nil }
+        return factory.classWithName(name)
     }
     
     public class func element(_ fullname: String) -> GaxbElement? {
         let components = fullname.components(separatedBy: ".")
-        if (components.count == 2) {
-            return self.element(components[0], name: components[1])
-        }
-        return nil
+        return components.count == 2 ? self.element(components[0], name: components[1]) : nil
     }
 }
 

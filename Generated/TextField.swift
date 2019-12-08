@@ -22,8 +22,8 @@ public class TextField: TextFieldBase {
             return textField
         }
         set {
-            if newValue is UITextField {
-                textField = newValue as! UITextField
+            if let newValue = newValue as? UITextField {
+                textField = newValue
             }
         }
     }

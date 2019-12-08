@@ -18,8 +18,8 @@ public class TextView: TextViewBase {
             return textView
 		}
 		set {
-			if newValue is UITextView {
-				textView = newValue as! UITextView
+			if let newValue = newValue as? UITextView {
+				textView = newValue
 			}
 		}
 	}
@@ -63,7 +63,7 @@ public class TextView: TextViewBase {
         // Attach toolbar if either the left button text or
         // right button text is provided.
         
-        if leftButtonText != nil  || rightButtonText != nil {
+        if leftButtonText != nil || rightButtonText != nil {
             attachToolBar()
         }
         
@@ -80,21 +80,19 @@ public class TextView: TextViewBase {
     
 	func textViewDidChange(_ textView: UITextView) {
         
-        if let showMaxCount = showMaxCount, let maxCount = maxCount {
-            if showMaxCount {
-                let updatedCount : Int = Int(maxCount) - Int(textView.text.count)
-                self.updateLeftButtonText(String(updatedCount))
-            }
+        if let showMaxCount = showMaxCount, let maxCount = maxCount, showMaxCount {
+            let updatedCount = Int(maxCount) - textView.text.count
+            self.updateLeftButtonText(String(updatedCount))
         }
         
-		if onChange != nil {
-			doNotification(onChange!)
+		if let onChange = onChange {
+			doNotification(onChange)
 		}
 	}
 	
 	func textViewDidEndEditing(_ textView: UITextView) {
-		if onEndEditing != nil {
-			doNotification(onEndEditing!)
+		if let onEndEditing = onEndEditing {
+			doNotification(onEndEditing)
 		}
 	}
     
@@ -114,12 +112,8 @@ public class TextView: TextViewBase {
 	
     func doNotification(_ note: String, _ userInfo: [String:String]? = nil) {
 		let (scopeObject, name) = self.parseNotification(note)
-		if name != nil {
-            if userInfo == nil {
-                NotificationCenter.`default`.post(name: Foundation.Notification.Name(rawValue: name!), object: scopeObject)
-            } else {
-                NotificationCenter.`default`.post(name: Foundation.Notification.Name(rawValue: name!), object: scopeObject, userInfo: userInfo)
-            }
+		if let name = name {
+            NotificationCenter.`default`.post(name: Foundation.Notification.Name(rawValue: name), object: scopeObject, userInfo: userInfo)
         }
 	}
         
@@ -132,8 +126,8 @@ public class TextView: TextViewBase {
     
     func attachToolBar() {
         
-        var barButtonItems : [UIBarButtonItem] = []
-    
+        var barButtonItems = [UIBarButtonItem]()
+        
         textViewToolbar.barStyle = .default
         textViewToolbar.barTintColor = UIColor.white
         
@@ -173,14 +167,12 @@ public class TextView: TextViewBase {
         // not be an active button rather just a label. this will then be set up
         // as a "regular system" button that is not enabled.
         
-        
         if let showMaxCount = showMaxCount {
             if showMaxCount {
                 let leftBarButton = UIBarButtonItem()
                 leftBarButton.target = self
                 leftBarButton.action = #selector(leftButtonAction)
                 leftBarButton.title = title
-
                 return leftBarButton
             }
         }
@@ -194,11 +186,8 @@ public class TextView: TextViewBase {
             // if iOS 9 or above, then create the button from custom view, but set the frame explicitly.
             
             if let innerButton = createInnerButton(buttonColor: leftBarButtonColor, title: title, isLeft: true) {
-                
                 leftBarButton = UIBarButtonItem.init(customView: innerButton)
-                
                 return leftBarButton
-                
             }
         }
         
@@ -212,21 +201,16 @@ public class TextView: TextViewBase {
     
     
     func generateRightBarButton(_ title: String) -> UIBarButtonItem {
-
         var rightBarButton : UIBarButtonItem
         
-
         if let rightBarButtonColor = rightButtonColor {
             
             // A right bar button color has been specified, if we are running iOS 11 or above, create the button from the custom view
             // if iOS 9 or above, then create the button from custom view, but set the frame explicitly.
             
             if let innerButton = createInnerButton(buttonColor: rightBarButtonColor, title: title, isLeft: false) {
-                
                 rightBarButton = UIBarButtonItem.init(customView: innerButton)
-                
                 return rightBarButton
-
             }
         }
         
@@ -248,8 +232,8 @@ public class TextView: TextViewBase {
             
             // Determine 30% opacity and use as the highlighted (depressed) color
             // of the button.
-            var r:CGFloat=0, g:CGFloat=0, b:CGFloat=0, a:CGFloat=0;
-            if(buttonColor.getRed(&r, green: &g, blue: &b, alpha: &a)) {
+            var r:CGFloat=0, g:CGFloat=0, b:CGFloat=0, a:CGFloat=0
+            if buttonColor.getRed(&r, green: &g, blue: &b, alpha: &a) {
                 let highlightedColor = UIColor(red: r, green: g, blue: b, alpha: a * 0.30)
                 innerButton.setTitleColor(highlightedColor, for: .highlighted)
             }
@@ -266,23 +250,17 @@ public class TextView: TextViewBase {
         } else if #available(iOS 9, *) {
             
             let innerButton = UIButton(type: .custom)
-            
-            
-            
-            
             innerButton.frame = CGRect(x: 0, y:0, width: 165 , height: 36)
             innerButton.setTitle(title, for: .normal)
             innerButton.setTitleColor(buttonColor , for: .normal)
             
             // Determine 30% opacity and use as the highlighted (depressed) color
             // of the button.
-            var r:CGFloat=0, g:CGFloat=0, b:CGFloat=0, a:CGFloat=0;
-            if(buttonColor.getRed(&r, green: &g, blue: &b, alpha: &a)) {
+            var r:CGFloat=0, g:CGFloat=0, b:CGFloat=0, a:CGFloat=0
+            if buttonColor.getRed(&r, green: &g, blue: &b, alpha: &a) {
                 let highlightedColor = UIColor(red: r, green: g, blue: b, alpha: a * 0.30)
                 innerButton.setTitleColor(highlightedColor, for: .highlighted)
             }
-            
-            
             
             innerButton.titleLabel?.font = title.count > 13 ? UIFont(name: "AvenirNext-DemiBold", size: 16) :  UIFont(name: "AvenirNext-DemiBold", size: 17)
             
@@ -297,7 +275,6 @@ public class TextView: TextViewBase {
             // set constraints manually. for iOS 10 support
             innerButton.widthAnchor.constraint(equalToConstant: innerButton.frame.size.width).isActive = true
             innerButton.heightAnchor.constraint(equalToConstant: innerButton.frame.size.height).isActive = true
-            
             
             return innerButton
         }
@@ -367,36 +344,36 @@ public class TextView: TextViewBase {
             
             switch(newKeyboardType) {
             case "default":
-                textView.keyboardType = UIKeyboardType.default
+                textView.keyboardType = .default
             case "asciiCapable":
-                textView.keyboardType = UIKeyboardType.asciiCapable
+                textView.keyboardType = .asciiCapable
             case "numbersAndPunctuation":
-                textView.keyboardType = UIKeyboardType.numbersAndPunctuation
+                textView.keyboardType = .numbersAndPunctuation
             case "URL":
-                textView.keyboardType = UIKeyboardType.URL
+                textView.keyboardType = .URL
             case "numberPad":
-                textView.keyboardType = UIKeyboardType.numberPad
+                textView.keyboardType = .numberPad
             case "phonePad":
-                textView.keyboardType = UIKeyboardType.phonePad
+                textView.keyboardType = .phonePad
             case "namePhonePad":
-                textView.keyboardType = UIKeyboardType.namePhonePad
+                textView.keyboardType = .namePhonePad
             case "emailAddress":
-                textView.keyboardType = UIKeyboardType.emailAddress
+                textView.keyboardType = .emailAddress
             case "decimalPad":
-                textView.keyboardType = UIKeyboardType.decimalPad
+                textView.keyboardType = .decimalPad
             case "twitter":
-                textView.keyboardType = UIKeyboardType.twitter
+                textView.keyboardType = .twitter
             case "webSearch":
-                textView.keyboardType = UIKeyboardType.webSearch
+                textView.keyboardType = .webSearch
             case "asciiCapableNumberPad":
                 if #available(iOS 10.0, *) {
-                    textView.keyboardType = UIKeyboardType.asciiCapableNumberPad
+                    textView.keyboardType = .asciiCapableNumberPad
                 } else {
                     // Fallback on default
-                    textView.keyboardType = UIKeyboardType.default
+                    textView.keyboardType = .default
                 }
             default:
-                textView.keyboardType = UIKeyboardType.default
+                textView.keyboardType = .default
             }
             
         }
@@ -522,8 +499,5 @@ private class TextViewDelegateHelper : NSObject, UITextViewDelegate {
         return true
         
     }
-    
 
-    
-    
 }

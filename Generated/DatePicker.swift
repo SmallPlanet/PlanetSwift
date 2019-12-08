@@ -12,8 +12,8 @@ public class DatePicker: DatePickerBase {
             return picker
         }
         set {
-            if newValue is UIDatePicker {
-                picker = newValue as! UIDatePicker
+            if let newValue = newValue as? UIDatePicker {
+                picker = newValue
             }
         }
     }
@@ -21,8 +21,8 @@ public class DatePicker: DatePickerBase {
     open override func gaxbPrepare() {
         super.gaxbPrepare()
         
-        if datePickerMode != nil {
-            picker.datePickerMode = UIDatePickerMode.fromPlanetUIDatePickerMode(datePickerMode!)
+        if let datePickerMode = datePickerMode {
+            picker.datePickerMode = UIDatePickerMode.fromPlanetUIDatePickerMode(datePickerMode)
         }
     }
 }

@@ -461,11 +461,11 @@
 			};
 			buildConfigurationList = A9B439681A3A53C70052690A /* Build configuration list for PBXProject "PlanetSwift" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
+				Base,
 			);
 			mainGroup = A9B439641A3A53C70052690A;
 			productRefGroup = A9B4396F1A3A53C70052690A /* Products */;

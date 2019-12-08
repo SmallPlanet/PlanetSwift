@@ -110,7 +110,7 @@ extension CGRect: GaxbType {
     }
     public static func componentsFromString(_ string: String) -> (CGPoint, CGSize) {
         var x:Float=0.0, y:Float=0.0, w:Float=0.0, h:Float=0.0
-        var components = string.components(separatedBy: ",")
+        let components = string.components(separatedBy: ",")
         if components.count == 4 {
             x = (components[0] as NSString).floatValue
             y = (components[1] as NSString).floatValue
@@ -136,7 +136,7 @@ extension UIEdgeInsets: GaxbType {
     }
     public static func componentsFromString(_ string: String) -> (CGFloat, CGFloat, CGFloat, CGFloat) {
         var t:Float=0.0, l:Float=0.0, b:Float=0.0, r:Float=0.0
-        var components = string.components(separatedBy: ",")
+        let components = string.components(separatedBy: ",")
         if components.count == 4 {
             t = (components[0] as NSString).floatValue
             l = (components[1] as NSString).floatValue
@@ -162,7 +162,7 @@ extension CGSize: GaxbType {
 	}
 	public static func componentsFromString(_ string: String) -> (CGFloat, CGFloat) {
 		var width:Float=0.0, height:Float=0.0
-		var components = string.components(separatedBy: ",")
+		let components = string.components(separatedBy: ",")
 		if components.count == 2 {
 			width = (components[0] as NSString).floatValue
 			height = (components[1] as NSString).floatValue
@@ -186,7 +186,7 @@ extension CGPoint: GaxbType {
     }
     public static func componentsFromString(_ string: String) -> (CGFloat, CGFloat) {
         var x:Float=0.0, y:Float=0.0
-        var components = string.components(separatedBy: ",")
+        let components = string.components(separatedBy: ",")
         if components.count == 2 {
             x = (components[0] as NSString).floatValue
             y = (components[1] as NSString).floatValue

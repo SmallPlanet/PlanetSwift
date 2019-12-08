@@ -22,7 +22,7 @@ From the command line, you can initialize the submodules by typing `git submodul
 
 ## License
 
-PlanetUnity is free software distributed under the terms of the MIT license, reproduced below. PlanetUnity may be used for any purpose, including commercial purposes, at absolutely no cost. No paperwork, no royalties, no GNU-like "copyleft" restrictions. Just download and enjoy.
+PlanetSwift is free software distributed under the terms of the MIT license, reproduced below. PlanetSwift may be used for any purpose, including commercial purposes, at absolutely no cost. No paperwork, no royalties, no GNU-like "copyleft" restrictions. Just download and enjoy.
 
 Copyright (c) 2014 [Small Planet Digital, LLC](http://smallplanet.com)
 

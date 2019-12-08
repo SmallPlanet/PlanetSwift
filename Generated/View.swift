@@ -40,62 +40,63 @@ open class View: ViewBase, CustomPlaygroundQuickLookable {
         externalView?.setAttribute(value, key: key)
     }
 
-    open override func gaxbPrepare() {
+
+    public override func gaxbPrepare() {
 		super.gaxbPrepare()
-        
-        if frame != nil {
-            view.bounds = CGRect(x: 0, y: 0, width: frame!.size.width, height: frame!.size.height)
-            view.center = CGPoint(x: frame!.midX, y: frame!.midY)
+
+        if let frame = frame {
+            view.bounds = CGRect(origin: .zero, size: frame.size)
+            view.center = CGPoint(x: frame.midX, y: frame.midY)
         }
-        if backgroundColor != nil {
-            view.layer.backgroundColor = backgroundColor!.cgColor
+        if let backgroundColor = backgroundColor {
+            view.layer.backgroundColor = backgroundColor.cgColor
         }
-        if alpha != nil {
-            view.alpha = CGFloat(alpha!)
+        if let alpha = alpha {
+            view.alpha = CGFloat(alpha)
         }
-        if clipsToBounds != nil {
-            view.clipsToBounds = clipsToBounds!
+        if let clipsToBounds = clipsToBounds {
+            view.clipsToBounds = clipsToBounds
         }
-		if userInteractionEnabled != nil {
-			view.isUserInteractionEnabled = userInteractionEnabled!
+		if let userInteractionEnabled = userInteractionEnabled {
+			view.isUserInteractionEnabled = userInteractionEnabled
 		}
-        if hidden != nil {
-            view.isHidden = hidden!
+        if let hidden = hidden {
+            view.isHidden = hidden
         }
-        if tag != nil {
-            view.tag = tag!
+        if let tag = tag {
+            view.tag = tag
         }
-		if contentMode != nil {
-            view.contentMode = UIViewContentMode.fromPlanetUIContentMode(contentMode!)
+		if let contentMode = contentMode {
+            view.contentMode = UIViewContentMode.fromPlanetUIContentMode(contentMode)
         }
-		if contentHuggingPriority != nil {
-            view.setContentHuggingPriority(UILayoutPriority(Float(contentHuggingPriority!.x)), for: .horizontal)
-            view.setContentHuggingPriority(UILayoutPriority(Float(contentHuggingPriority!.y)), for: .vertical)
+		if let contentHuggingPriority = contentHuggingPriority {
+            view.setContentHuggingPriority(UILayoutPriority(Float(contentHuggingPriority.x)), for: .horizontal)
+            view.setContentHuggingPriority(UILayoutPriority(Float(contentHuggingPriority.y)), for: .vertical)
 		}
-		if contentCompressionResistancePriority != nil {
-            view.setContentCompressionResistancePriority(UILayoutPriority(Float(contentCompressionResistancePriority!.x)), for: .horizontal)
-            view.setContentCompressionResistancePriority(UILayoutPriority(Float(contentCompressionResistancePriority!.y)), for: .vertical)
+		if let contentCompressionResistancePriority = contentCompressionResistancePriority {
+            view.setContentCompressionResistancePriority(UILayoutPriority(Float(contentCompressionResistancePriority.x)), for: .horizontal)
+            view.setContentCompressionResistancePriority(UILayoutPriority(Float(contentCompressionResistancePriority.y)), for: .vertical)
 		}
-        if borderColor != nil {
-            view.layer.borderColor = borderColor!.cgColor
+        if let borderColor = borderColor {
+            view.layer.borderColor = borderColor.cgColor
         }
-        if borderWidth != nil {
-            view.layer.borderWidth = CGFloat(borderWidth!)
+        if let borderWidth = borderWidth {
+            view.layer.borderWidth = CGFloat(borderWidth)
         }
-        if cornerRadius != nil {
-            view.layer.cornerRadius = CGFloat(cornerRadius!)
+        if let cornerRadius = cornerRadius {
+            view.layer.cornerRadius = CGFloat(cornerRadius)
         }
-        if shadowOffset != nil {
-            view.layer.shadowOffset = shadowOffset!
+        if let shadowOffset = shadowOffset {
+            view.layer.shadowOffset = shadowOffset
         }
-        if shadowRadius != nil {
-            view.layer.shadowRadius = CGFloat(shadowRadius!)
+        if let shadowRadius = shadowRadius {
+            view.layer.shadowRadius = CGFloat(shadowRadius)
         }
-        if shadowColor != nil {
-            view.layer.shadowColor = shadowColor!.cgColor
+        if let shadowColor = shadowColor {
+            view.layer.shadowColor = shadowColor.cgColor
         }
-        if shadowOpacity != nil {
-            view.layer.shadowOpacity = Float(shadowOpacity!)
+        if let shadowOpacity = shadowOpacity {
+            view.layer.shadowOpacity = Float(shadowOpacity)
         }
 		if let masksToBounds = masksToBounds {
 			view.layer.masksToBounds = masksToBounds

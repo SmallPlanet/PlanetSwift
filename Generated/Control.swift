@@ -9,14 +9,11 @@ open class Control: ControlBase {
 	public var control:UIControl?
 	override open var view: UIView {
 		get {
-			if control != nil {
-				return control!
-			}
-			return super.view
+			return control ?? super.view
 		}
 		set {
-			if newValue is UIControl {
-				control = (newValue as! UIControl)
+			if let newValue = newValue as? UIControl {
+				control = newValue
 			}
 		}
 	}
@@ -24,17 +21,16 @@ open class Control: ControlBase {
 	open override func gaxbPrepare() {
 		super.gaxbPrepare()
 		
-		if let control = control {
-			
-			if enabled != nil {
-				control.isEnabled = enabled!
-			}
-			if selected != nil {
-				control.isSelected = selected!
-			}
-			if highlighted != nil {
-				control.isHighlighted = highlighted!
-			}
-		}
+        guard let control = control else { return }
+        
+        if let enabled = enabled {
+            control.isEnabled = enabled
+        }
+        if let selected = selected {
+            control.isSelected = selected
+        }
+        if let highlighted = highlighted {
+            control.isHighlighted = highlighted
+        }
 	}
 }

@@ -12,8 +12,8 @@ public class NetworkImageView: NetworkImageViewBase {
 			return networkImageView
 		}
 		set {
-			if newValue is PlanetNetworkImageView {
-				networkImageView = newValue as! PlanetNetworkImageView
+			if let newValue = newValue as? PlanetNetworkImageView {
+				networkImageView = newValue
 			}
 		}
 	}
