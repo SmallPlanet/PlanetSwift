@@ -53,13 +53,13 @@ public class TextField: TextFieldBase {
             textField.adjustsFontSizeToFitWidth = adjustsFontSizeToFitWidth
         }
         if let borderStyle = borderStyle {
-            textField.borderStyle = UITextBorderStyle(withPlanetTextBorderStyle: borderStyle)
+            textField.borderStyle = UITextField.BorderStyle(withPlanetTextBorderStyle: borderStyle)
         }
 		if let secureTextEntry = secureTextEntry {
 			textField.isSecureTextEntry = secureTextEntry
 		}
 		if let clearButtonMode = clearButtonMode {
-            textField.clearButtonMode = UITextFieldViewMode(withPlanetTextFieldViewMode:clearButtonMode)
+            textField.clearButtonMode = UITextField.ViewMode(withPlanetTextFieldViewMode:clearButtonMode)
 		}
 		if let clearsOnBeginEditing = clearsOnBeginEditing {
 			textField.clearsOnBeginEditing = clearsOnBeginEditing

@@ -227,7 +227,7 @@ open class PlanetCollectionViewController: PlanetViewController, UICollectionVie
             template.decorate(cellReference as! UICollectionViewCell)
             
             let xmlView = cellReference?.xmlView
-            size = xmlView?.view.systemLayoutSizeFitting(UILayoutFittingCompressedSize) ?? CGSize.zero
+            size = xmlView?.view.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize) ?? CGSize.zero
             setCellSize(size, forIndexPath: indexPath)
         }
         return size

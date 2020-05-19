@@ -72,7 +72,7 @@ public class Label: LabelBase {
         checkUnlocalized(text, localized: localizedText)
         
         let attributedString = NSMutableAttributedString(string: localizedText)
-        let attributes = [NSAttributedStringKey.paragraphStyle : paragraphStyle]
+        let attributes = [NSAttributedString.Key.paragraphStyle : paragraphStyle]
         attributedString.setAttributes(attributes, range: NSRange(location: 0, length: attributedString.length))
         label.attributedText = attributedString
     }

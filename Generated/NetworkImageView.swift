@@ -43,10 +43,10 @@ public class NetworkImageView: NetworkImageViewBase {
         }
         
 		if let placeholderContentMode = placeholderContentMode {
-			networkImageView.placeholderContentMode = UIViewContentMode.fromPlanetUIContentMode(placeholderContentMode)
+			networkImageView.placeholderContentMode = UIView.ContentMode.fromPlanetUIContentMode(placeholderContentMode)
 		}
 		if let contentMode = contentMode {
-			networkImageView.downloadedContentMode = UIViewContentMode.fromPlanetUIContentMode(contentMode)
+			networkImageView.downloadedContentMode = UIView.ContentMode.fromPlanetUIContentMode(contentMode)
 		}
 	}
 }

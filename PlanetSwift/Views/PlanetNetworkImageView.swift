@@ -10,8 +10,8 @@ import UIKit
 
 public class PlanetNetworkImageView: UIImageView {
     
-    public var placeholderContentMode:UIViewContentMode = .scaleToFill
-    public var downloadedContentMode:UIViewContentMode = .scaleToFill
+    public var placeholderContentMode:UIView.ContentMode = .scaleToFill
+    public var downloadedContentMode:UIView.ContentMode = .scaleToFill
     
     public func setImageWithPath(_ path: String?, placeholder:UIImage? = nil, completion:((_ success:Bool)->Void)? = nil) {
         guard let urlPath = path, let url = NSURL(string: urlPath) else {

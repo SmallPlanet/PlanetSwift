@@ -32,7 +32,7 @@ public class ActivityIndicatorView: ActivityIndicatorViewBase {
         
         #if os(iOS)
         if let activityIndicatorViewStyle = activityIndicatorViewStyle {
-            activityIndicator.activityIndicatorViewStyle = .fromPlanetUIActivityIndicatorViewStyle(activityIndicatorViewStyle)
+            activityIndicator.style = .fromPlanetUIActivityIndicatorViewStyle(activityIndicatorViewStyle)
         }
         #endif
         if let color = color {

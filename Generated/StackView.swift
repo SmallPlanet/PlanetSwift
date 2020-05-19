@@ -31,16 +31,16 @@ public class StackView: StackViewBase {
 
         guard #available(iOS 9.0, *) else { return }
         if let alignment = alignment {
-            stackView.alignment = UIStackViewAlignment(alignment)
+            stackView.alignment = UIStackView.Alignment(alignment)
         }
         if let axis = axis {
-            stackView.axis = UILayoutConstraintAxis(axis)
+            stackView.axis = NSLayoutConstraint.Axis(axis)
         }
         if let baselineRelativeArrangement = baselineRelativeArrangement {
             stackView.isBaselineRelativeArrangement = baselineRelativeArrangement
         }
         if let distribution = distribution {
-            stackView.distribution = UIStackViewDistribution(distribution)
+            stackView.distribution = UIStackView.Distribution(distribution)
         }
         if let layoutMarginsRelativeArrangement = layoutMarginsRelativeArrangement {
             stackView.isLayoutMarginsRelativeArrangement = layoutMarginsRelativeArrangement
@@ -61,7 +61,7 @@ public class StackView: StackViewBase {
 }
 
 @available(iOS 9.0, *)
-extension UILayoutConstraintAxis {
+extension NSLayoutConstraint.Axis {
     init(_ planetSwiftEnum: PlanetUI.LayoutConstraintAxis) {
         switch planetSwiftEnum {
         case .horizontal:
@@ -73,7 +73,7 @@ extension UILayoutConstraintAxis {
 }
 
 @available(iOS 9.0, *)
-extension UIStackViewAlignment {
+extension UIStackView.Alignment {
     init(_ planetSwiftEnum: PlanetUI.StackViewAlignment) {
         switch planetSwiftEnum {
         case .fill:
@@ -89,15 +89,15 @@ extension UIStackViewAlignment {
         case .trailing:
             self = .trailing
         case .bottom:
-            self = UIStackViewAlignment.bottom
+            self = UIStackView.Alignment.bottom
         case .top:
-            self = UIStackViewAlignment.top
+            self = UIStackView.Alignment.top
         }
     }
 }
 
 @available(iOS 9.0, *)
-extension UIStackViewDistribution {
+extension UIStackView.Distribution {
     init(_ planetSwiftEnum: PlanetUI.StackViewDistribution) {
         switch planetSwiftEnum {
         case .fill:

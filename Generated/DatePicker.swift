@@ -22,7 +22,7 @@ public class DatePicker: DatePickerBase {
         super.gaxbPrepare()
         
         if let datePickerMode = datePickerMode {
-            picker.datePickerMode = UIDatePickerMode.fromPlanetUIDatePickerMode(datePickerMode)
+            picker.datePickerMode = UIDatePicker.Mode.fromPlanetUIDatePickerMode(datePickerMode)
         }
     }
 }

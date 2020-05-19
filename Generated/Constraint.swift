@@ -13,7 +13,7 @@ public class Constraint: ConstraintBase {
 
 	//MARK: - enum conversion
 
-	public class func layoutAttributeFromEnum(_ attribute:PlanetUI.LayoutAttribute) -> NSLayoutAttribute {
+	public class func layoutAttributeFromEnum(_ attribute:PlanetUI.LayoutAttribute) -> NSLayoutConstraint.Attribute {
 
 		switch(attribute) {
 		case .left:
@@ -47,7 +47,7 @@ public class Constraint: ConstraintBase {
 		}
 	}
 
-	public class func layoutRelationFromEnum(_ relation:PlanetUI.LayoutRelation) -> NSLayoutRelation {
+	public class func layoutRelationFromEnum(_ relation:PlanetUI.LayoutRelation) -> NSLayoutConstraint.Relation {
 
 		switch(relation) {
 		case .lessThanOrEqual:
@@ -185,7 +185,7 @@ public class Constraint: ConstraintBase {
 }
 
 extension NSLayoutConstraint {
-    public convenience init(item: UIView, toItem: UIView?, equalAttribute attribute: NSLayoutAttribute) {
+    public convenience init(item: UIView, toItem: UIView?, equalAttribute attribute: NSLayoutConstraint.Attribute) {
         self.init(item: item, attribute: attribute, relatedBy:.equal, toItem:toItem, attribute: attribute, multiplier: 1, constant: 0)
     }
 }

@@ -21,7 +21,7 @@ public class PlanetLabel: UILabel {
     public var textInsets = UIEdgeInsets.zero
 
     override public func drawText(in rect: CGRect) {
-        let insetRect = UIEdgeInsetsInsetRect(rect, textInsets)
+        let insetRect = rect.inset(by: textInsets)
         super.drawText(in: insetRect)
     }
 }

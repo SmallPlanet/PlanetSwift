@@ -10,7 +10,7 @@ public protocol PlanetExternalView : class {
     func gaxbDidPrepare()
 }
 
-open class View: ViewBase, CustomPlaygroundQuickLookable {
+open class View: ViewBase {
     lazy open var view = UIView()
     open weak var externalView : PlanetExternalView? = nil
     
@@ -67,7 +67,7 @@ open class View: ViewBase, CustomPlaygroundQuickLookable {
             view.tag = tag
         }
 		if let contentMode = contentMode {
-            view.contentMode = UIViewContentMode.fromPlanetUIContentMode(contentMode)
+            view.contentMode = UIView.ContentMode.fromPlanetUIContentMode(contentMode)
         }
 		if let contentHuggingPriority = contentHuggingPriority {
             view.setContentHuggingPriority(UILayoutPriority(Float(contentHuggingPriority.x)), for: .horizontal)
@@ -135,8 +135,4 @@ open class View: ViewBase, CustomPlaygroundQuickLookable {
 		}
 		return nil
 	}
-
-    public var customPlaygroundQuickLook: PlaygroundQuickLook {
-        return .view(view)
-    }
 }

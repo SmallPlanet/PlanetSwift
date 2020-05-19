@@ -18,7 +18,7 @@ public class Button: ButtonBase {
         }
     }
 
-    public func updateBackgroundColor(_ color: UIColor?, forstate state: UIControlState) {
+    public func updateBackgroundColor(_ color: UIColor?, forstate state: UIControl.State) {
         switch state {
         case .normal: button.backgroundColor = color
         case .selected: button.backgroundColorSelected = color
@@ -29,13 +29,13 @@ public class Button: ButtonBase {
         }
     }
 
-    public func updateTitle(_ text: String?, forState state: UIControlState = .normal) {
+    public func updateTitle(_ text: String?, forState state: UIControl.State = .normal) {
         button.setTitle(text.map{ NSLocalizedString($0, comment:"") }, for:state)
     }
 
     public func makeButton() -> PlanetButton {
         if let type = type {
-            return PlanetButton(type: UIButtonType(withPlanetButtonType: type))
+            return PlanetButton(type: UIButton.ButtonType(withPlanetButtonType: type))
         }
         return PlanetButton()
     }
@@ -51,13 +51,13 @@ public class Button: ButtonBase {
         }
         button.tintColor = tintColor
 
-        updateTitle(title, forState: UIControlState())
+        updateTitle(title, forState: UIControl.State())
         updateTitle(titleHighlighted, forState: .highlighted)
         updateTitle(titleSelected, forState: .selected)
         updateTitle(titleSelectedHighlighted, forState: [.selected, .highlighted])
         updateTitle(titleDisabled, forState: .disabled)
 
-        button.setTitleColor(titleFontColor, for: UIControlState())
+        button.setTitleColor(titleFontColor, for: UIControl.State())
         button.setTitleColor(titleFontColorHighlighted, for: .highlighted)
         button.setTitleColor(titleFontColorSelected, for: .selected)
         button.setTitleColor(titleFontColorSelectedHighlighted, for: [.selected, .highlighted])
@@ -76,7 +76,7 @@ public class Button: ButtonBase {
 
         if let backgroundImage = backgroundImage {
             let img = UIImage(gaxbString: backgroundImage)
-            button.setBackgroundImage(img, for: UIControlState())
+            button.setBackgroundImage(img, for: UIControl.State())
         }
         if let backgroundImageHighlighted = backgroundImageHighlighted {
             let img = UIImage(gaxbString: backgroundImageHighlighted)
@@ -97,7 +97,7 @@ public class Button: ButtonBase {
 
         if let image = image {
             let img = UIImage(gaxbString: image)
-            button.setImage(img, for: UIControlState())
+            button.setImage(img, for: UIControl.State())
         }
         if let imageHighlighted = imageHighlighted {
             let img = UIImage(gaxbString: imageHighlighted)
@@ -131,7 +131,7 @@ public class Button: ButtonBase {
             let disabledPath = baseName + "_disabled" + suffix
             
             var img = UIImage(contentsOfFile: String(bundlePath: normalPath)) ?? UIImage(contentsOfFile: String(bundlePath: imageSet))
-            button.setImage(img, for: UIControlState())
+            button.setImage(img, for: UIControl.State())
             img = UIImage(contentsOfFile: String(bundlePath: highlightedPath))
             button.setImage(img, for: .highlighted)
             img = UIImage(contentsOfFile: String(bundlePath: selectedPath))
@@ -157,7 +157,7 @@ public class Button: ButtonBase {
             let disabledPath = baseName + "_disabled" + suffix
 
             var img = UIImage(contentsOfFile: String(bundlePath: normalPath)) ?? UIImage(contentsOfFile: String(bundlePath: backgroundImageSet))
-            button.setBackgroundImage(img, for: UIControlState())
+            button.setBackgroundImage(img, for: UIControl.State())
             img = UIImage(contentsOfFile: String(bundlePath: highlightedPath))
             button.setBackgroundImage(img, for: .highlighted)
             img = UIImage(contentsOfFile: String(bundlePath: selectedPath))

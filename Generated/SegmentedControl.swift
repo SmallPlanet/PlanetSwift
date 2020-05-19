@@ -21,29 +21,29 @@ public class SegmentedControl: SegmentedControlBase {
     open override func gaxbPrepare() {
         super.gaxbPrepare()
         segmentedControl.tintColor = tintColor
-        segmentedControl.setTitleTextAttributes(textAttributes(UIControlState()), for: UIControlState())
-        segmentedControl.setTitleTextAttributes(textAttributes(.selected), for: .selected)
+        segmentedControl.setTitleTextAttributes(textAttributes(UIControl.State()) as? [NSAttributedString.Key : Any], for: UIControl.State())
+        segmentedControl.setTitleTextAttributes(textAttributes(.selected) as? [NSAttributedString.Key : Any], for: .selected)
     }
 
-    private func textAttributes(_ state: UIControlState) -> [NSObject : AnyObject]? {
+    private func textAttributes(_ state: UIControl.State) -> [NSObject : AnyObject]? {
         var attributes: [NSObject : AnyObject] = Dictionary()
-        if state == UIControlState() {
+        if state == UIControl.State() {
             if let textColorNormal = textColorNormal {
-                attributes.updateValue(textColorNormal, forKey: NSAttributedStringKey.foregroundColor as NSObject)
+                attributes.updateValue(textColorNormal, forKey: NSAttributedString.Key.foregroundColor as NSObject)
             }
             if let fontNormal = fontNormal {
                 let font = UIFont(name: fontNormal, size:CGFloat(fontSizeNormal))!
-                attributes.updateValue(font, forKey: NSAttributedStringKey.font as NSObject)
+                attributes.updateValue(font, forKey: NSAttributedString.Key.font as NSObject)
             }
             return attributes
         }
-        if state == UIControlState.selected {
+        if state == UIControl.State.selected {
             if let textColorSelected = textColorSelected {
-                attributes.updateValue(textColorSelected, forKey: NSAttributedStringKey.foregroundColor as NSObject)
+                attributes.updateValue(textColorSelected, forKey: NSAttributedString.Key.foregroundColor as NSObject)
             }
             if let fontSelected = fontSelected {
                 let font = UIFont(name: fontSelected, size:CGFloat(fontSizeSelected))!
-                attributes.updateValue(font, forKey: NSAttributedStringKey.font as NSObject)
+                attributes.updateValue(font, forKey: NSAttributedString.Key.font as NSObject)
             }
             return attributes
         }

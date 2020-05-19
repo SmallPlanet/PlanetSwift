@@ -129,7 +129,7 @@ extension CGRect: GaxbType {
 extension UIEdgeInsets: GaxbType {
     public init(gaxbString withGaxbString: String) {
         let (top, left, bottom, right) = UIEdgeInsets.componentsFromString(withGaxbString)
-        self = UIEdgeInsetsMake(top, left, bottom, right)
+        self = UIEdgeInsets.init(top: top, left: left, bottom: bottom, right: right)
     }
     public mutating func setWithGaxbString(_ GaxbString: String) {
         (top, left, bottom, right) = UIEdgeInsets.componentsFromString(GaxbString)
@@ -281,8 +281,8 @@ extension UIColor {
 
 //MARK: - enum conversion
 
-extension UIButtonType {
-    public static func fromPlanetUIButtonType(_ type:PlanetUI.ButtonType) -> UIButtonType {
+extension UIButton.ButtonType {
+    public static func fromPlanetUIButtonType(_ type:PlanetUI.ButtonType) -> UIButton.ButtonType {
         return self.init(withPlanetButtonType: type)
     }
     public init(withPlanetButtonType type: PlanetUI.ButtonType) {
@@ -346,27 +346,27 @@ extension NSLineBreakMode {
 }
 
 #if os(iOS)
-extension UIDatePickerMode {
-    public static func fromPlanetUIDatePickerMode(_ mode:PlanetUI.DatePickerMode) -> UIDatePickerMode {
+extension UIDatePicker.Mode {
+    public static func fromPlanetUIDatePickerMode(_ mode:PlanetUI.DatePickerMode) -> UIDatePicker.Mode {
         return self.init(withPlanetDatePickerMode: mode)
     }
     public init(withPlanetDatePickerMode mode: PlanetUI.DatePickerMode) {
         switch mode {
         case .time:
-            self = UIDatePickerMode.time
+            self = UIDatePicker.Mode.time
         case .date:
-            self = UIDatePickerMode.date
+            self = UIDatePicker.Mode.date
         case .dateAndTime:
-            self = UIDatePickerMode.dateAndTime
+            self = UIDatePicker.Mode.dateAndTime
         case .countDownTimer:
-            self = UIDatePickerMode.countDownTimer
+            self = UIDatePicker.Mode.countDownTimer
         }
     }
 }
 #endif
 
-extension UITextBorderStyle {
-	public static func fromPlanetUITextFieldBorderStyle(_ style:PlanetUI.TextBorderStyle) -> UITextBorderStyle {
+extension UITextField.BorderStyle {
+	public static func fromPlanetUITextFieldBorderStyle(_ style:PlanetUI.TextBorderStyle) -> UITextField.BorderStyle {
         return self.init(withPlanetTextBorderStyle: style)
     }
     public init(withPlanetTextBorderStyle style: PlanetUI.TextBorderStyle) {
@@ -383,8 +383,8 @@ extension UITextBorderStyle {
 	}
 }
 
-extension UITextFieldViewMode {
-	public static func fromPlanetUITextFieldViewMode(_ mode:PlanetUI.TextFieldViewMode) -> UITextFieldViewMode {
+extension UITextField.ViewMode {
+	public static func fromPlanetUITextFieldViewMode(_ mode:PlanetUI.TextFieldViewMode) -> UITextField.ViewMode {
         return self.init(withPlanetTextFieldViewMode: mode)
     }
     public init(withPlanetTextFieldViewMode mode: PlanetUI.TextFieldViewMode) {
@@ -401,8 +401,8 @@ extension UITextFieldViewMode {
 	}
 }
 
-extension UIViewContentMode {
-	public static func fromPlanetUIContentMode(_ mode:PlanetUI.ContentMode) -> UIViewContentMode {
+extension UIView.ContentMode {
+	public static func fromPlanetUIContentMode(_ mode:PlanetUI.ContentMode) -> UIView.ContentMode {
         return self.init(withPlanetContentMode: mode)
     }
     public init(withPlanetContentMode mode: PlanetUI.ContentMode) {
@@ -444,39 +444,39 @@ extension UIAccessibilityTraits {
     public init(withPlanetAccessibilityTraits trait: PlanetUI.AccessibilityTraits) {
 		switch trait {
 		case .none:
-			self = UIAccessibilityTraitNone
+			self = UIAccessibilityTraits.none
 		case .button:
-			self = UIAccessibilityTraitButton
+			self = UIAccessibilityTraits.button
 		case .link:
-			self = UIAccessibilityTraitLink
+			self = UIAccessibilityTraits.link
 		case .searchField:
-			self = UIAccessibilityTraitSearchField
+			self = UIAccessibilityTraits.searchField
 		case .image:
-			self = UIAccessibilityTraitImage
+			self = UIAccessibilityTraits.image
 		case .selected:
-			self = UIAccessibilityTraitSelected
+			self = UIAccessibilityTraits.selected
 		case .playsSound:
-			self = UIAccessibilityTraitPlaysSound
+			self = UIAccessibilityTraits.playsSound
 		case .keyboardKey:
-			self = UIAccessibilityTraitKeyboardKey
+			self = UIAccessibilityTraits.keyboardKey
 		case .staticText:
-			self = UIAccessibilityTraitStaticText
+			self = UIAccessibilityTraits.staticText
 		case .summaryElement:
-			self = UIAccessibilityTraitSummaryElement
+			self = UIAccessibilityTraits.summaryElement
 		case .notEnabled:
-			self = UIAccessibilityTraitNotEnabled
+			self = UIAccessibilityTraits.notEnabled
 		case .updatesFrequently:
-			self = UIAccessibilityTraitUpdatesFrequently
+			self = UIAccessibilityTraits.updatesFrequently
 		case .startsMediaSession:
-			self = UIAccessibilityTraitStartsMediaSession
+			self = UIAccessibilityTraits.startsMediaSession
         case .adjustable:
-			self = UIAccessibilityTraitAdjustable
+			self = UIAccessibilityTraits.adjustable
 		case .allowsDirectInteraction:
-			self = UIAccessibilityTraitAllowsDirectInteraction
+			self = UIAccessibilityTraits.allowsDirectInteraction
 		case .causesPageTurn:
-			self = UIAccessibilityTraitCausesPageTurn
+			self = UIAccessibilityTraits.causesPageTurn
         case .header:
-			self = UIAccessibilityTraitHeader
+			self = UIAccessibilityTraits.header
 		}
 	}
 }
@@ -546,8 +546,8 @@ extension UIKeyboardType {
 }
 
 #if os(iOS)
-extension UIActivityIndicatorViewStyle {
-    public static func fromPlanetUIActivityIndicatorViewStyle(_ type:PlanetUI.ActivityIndicatorViewStyle) -> UIActivityIndicatorViewStyle {
+extension UIActivityIndicatorView.Style {
+    public static func fromPlanetUIActivityIndicatorViewStyle(_ type:PlanetUI.ActivityIndicatorViewStyle) -> UIActivityIndicatorView.Style {
         return self.init(withPlanetActivityIndicatorViewStyle: type)
     }
     public init(withPlanetActivityIndicatorViewStyle style: PlanetUI.ActivityIndicatorViewStyle) {
