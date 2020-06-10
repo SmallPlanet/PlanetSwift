@@ -1,0 +1,32 @@
+{
+  "": {
+    "dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/AEXML.build/AEXML.d",
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/AEXML.build/AEXML.o",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/AEXML.build/master.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/checkouts/AEXML/Sources/AEXML/Document.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/AEXML.build/Document.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/AEXML.build/Document~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/AEXML.build/Document.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/checkouts/AEXML/Sources/AEXML/Element.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/AEXML.build/Element.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/AEXML.build/Element~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/AEXML.build/Element.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/checkouts/AEXML/Sources/AEXML/Error.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/AEXML.build/Error.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/AEXML.build/Error~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/AEXML.build/Error.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/checkouts/AEXML/Sources/AEXML/Options.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/AEXML.build/Options.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/AEXML.build/Options~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/AEXML.build/Options.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/checkouts/AEXML/Sources/AEXML/Parser.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/AEXML.build/Parser.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/AEXML.build/Parser~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/AEXML.build/Parser.swiftdeps"
+  }
+}

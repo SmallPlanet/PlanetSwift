@@ -1,0 +1,357 @@
+{
+  "": {
+    "dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/PlanetSwift.d",
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/PlanetSwift.o",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/master.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/GaxbTypes/Gaxb.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/GaxbTypes/Gaxb.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/GaxbTypes/Gaxb~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/GaxbTypes/Gaxb.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/GaxbTypes/GaxbTypes.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/GaxbTypes/GaxbTypes.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/GaxbTypes/GaxbTypes~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/GaxbTypes/GaxbTypes.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/GaxbTypes/String+Bundle.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/GaxbTypes/String+Bundle.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/GaxbTypes/String+Bundle~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/GaxbTypes/String+Bundle.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/ActivityIndicatorView.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ActivityIndicatorView.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ActivityIndicatorView~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ActivityIndicatorView.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/ActivityIndicatorViewBase.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ActivityIndicatorViewBase.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ActivityIndicatorViewBase~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ActivityIndicatorViewBase.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/Button.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/Button.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/Button~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/Button.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/ButtonBase.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ButtonBase.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ButtonBase~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ButtonBase.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/Code.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/Code.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/Code~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/Code.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/CodeBase.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/CodeBase.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/CodeBase~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/CodeBase.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/CollectionView.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/CollectionView.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/CollectionView~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/CollectionView.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/CollectionViewBase.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/CollectionViewBase.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/CollectionViewBase~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/CollectionViewBase.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/Constraint.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/Constraint.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/Constraint~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/Constraint.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/ConstraintBase.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ConstraintBase.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ConstraintBase~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ConstraintBase.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/Control.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/Control.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/Control~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/Control.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/ControlBase.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ControlBase.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ControlBase~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ControlBase.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/Controller.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/Controller.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/Controller~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/Controller.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/ControllerBase.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ControllerBase.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ControllerBase~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ControllerBase.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/DatePicker.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/DatePicker.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/DatePicker~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/DatePicker.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/DatePickerBase.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/DatePickerBase.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/DatePickerBase~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/DatePickerBase.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/GestureRecognizer.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/GestureRecognizer.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/GestureRecognizer~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/GestureRecognizer.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/GestureRecognizerBase.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/GestureRecognizerBase.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/GestureRecognizerBase~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/GestureRecognizerBase.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/ImageView.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ImageView.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ImageView~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ImageView.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/ImageViewBase.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ImageViewBase.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ImageViewBase~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ImageViewBase.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/Label.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/Label.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/Label~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/Label.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/LabelBase.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/LabelBase.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/LabelBase~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/LabelBase.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/NetworkImageView.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/NetworkImageView.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/NetworkImageView~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/NetworkImageView.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/NetworkImageViewBase.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/NetworkImageViewBase.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/NetworkImageViewBase~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/NetworkImageViewBase.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/Notification.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/Notification.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/Notification~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/Notification.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/NotificationBase.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/NotificationBase.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/NotificationBase~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/NotificationBase.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/Object.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/Object.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/Object~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/Object.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/ObjectBase.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ObjectBase.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ObjectBase~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ObjectBase.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/PageControl.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/PageControl.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/PageControl~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/PageControl.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/PageControlBase.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/PageControlBase.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/PageControlBase~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/PageControlBase.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/PanGestureRecognizer.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/PanGestureRecognizer.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/PanGestureRecognizer~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/PanGestureRecognizer.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/PanGestureRecognizerBase.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/PanGestureRecognizerBase.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/PanGestureRecognizerBase~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/PanGestureRecognizerBase.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/PickerView.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/PickerView.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/PickerView~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/PickerView.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/PickerViewBase.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/PickerViewBase.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/PickerViewBase~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/PickerViewBase.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/PinchGestureRecognizer.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/PinchGestureRecognizer.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/PinchGestureRecognizer~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/PinchGestureRecognizer.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/PinchGestureRecognizerBase.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/PinchGestureRecognizerBase.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/PinchGestureRecognizerBase~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/PinchGestureRecognizerBase.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/PlanetUI.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/PlanetUI.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/PlanetUI~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/PlanetUI.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/PlanetUIBase.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/PlanetUIBase.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/PlanetUIBase~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/PlanetUIBase.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/Scene.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/Scene.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/Scene~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/Scene.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/SceneBase.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/SceneBase.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/SceneBase~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/SceneBase.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/ScrollView.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ScrollView.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ScrollView~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ScrollView.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/ScrollViewBase.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ScrollViewBase.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ScrollViewBase~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ScrollViewBase.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/SegmentedControl.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/SegmentedControl.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/SegmentedControl~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/SegmentedControl.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/SegmentedControlBase.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/SegmentedControlBase.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/SegmentedControlBase~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/SegmentedControlBase.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/StackView.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/StackView.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/StackView~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/StackView.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/StackViewBase.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/StackViewBase.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/StackViewBase~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/StackViewBase.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/Switch.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/Switch.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/Switch~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/Switch.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/SwitchBase.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/SwitchBase.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/SwitchBase~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/SwitchBase.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/TextField.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/TextField.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/TextField~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/TextField.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/TextFieldBase.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/TextFieldBase.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/TextFieldBase~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/TextFieldBase.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/TextView.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/TextView.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/TextView~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/TextView.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/TextViewBase.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/TextViewBase.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/TextViewBase~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/TextViewBase.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/View.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/View.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/View~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/View.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/ViewBase.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ViewBase.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ViewBase~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/ViewBase.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/VisualEffectView.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/VisualEffectView.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/VisualEffectView~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/VisualEffectView.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/VisualEffectViewBase.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/VisualEffectViewBase.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/VisualEffectViewBase~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/VisualEffectViewBase.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/WebView.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/WebView.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/WebView~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/WebView.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Generated/WebViewBase.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/WebViewBase.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/WebViewBase~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Generated/WebViewBase.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/ImageCache.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/ImageCache.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/ImageCache~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/ImageCache.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/NotificationHandler.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/NotificationHandler.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/NotificationHandler~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/NotificationHandler.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/PlanetCollectionViewController.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/PlanetCollectionViewController.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/PlanetCollectionViewController~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/PlanetCollectionViewController.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/PlanetSwiftConfiguration.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/PlanetSwiftConfiguration.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/PlanetSwiftConfiguration~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/PlanetSwiftConfiguration.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/PlanetViewController.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/PlanetViewController.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/PlanetViewController~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/PlanetViewController.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Views/PlanetButton.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Views/PlanetButton.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Views/PlanetButton~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Views/PlanetButton.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Views/PlanetLabel.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Views/PlanetLabel.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Views/PlanetLabel~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Views/PlanetLabel.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Views/PlanetNetworkImageView.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Views/PlanetNetworkImageView.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Views/PlanetNetworkImageView~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Views/PlanetNetworkImageView.swiftdeps"
+  },
+  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/Sources/PlanetSwift/Views/PlanetView.swift": {
+    "object": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Views/PlanetView.swift.o",
+    "swiftmodule": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Views/PlanetView~partial.swiftmodule",
+    "swift-dependencies": "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/Views/PlanetView.swiftdeps"
+  }
+}

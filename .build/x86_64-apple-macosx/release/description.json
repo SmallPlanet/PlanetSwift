@@ -1,0 +1,26 @@
+{
+  "allExecutables" : [
+
+  ],
+  "builtTestProducts" : [
+    {
+      "packageName" : "PlanetSwift",
+      "productName" : "PlanetSwiftPackageTests",
+      "testBinary" : "\/Volumes\/Development\/Development\/smallplanet\/planetswift\/PlanetSwift\/.build\/x86_64-apple-macosx\/release\/PlanetSwiftPackageTests.xctest\/Contents\/MacOS\/PlanetSwiftPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "rootExecutables" : [
+
+  ],
+  "swiftTargetMap" : {
+    "C.AEXML-release.module" : "AEXML",
+    "C.PlanetSwift-release.module" : "PlanetSwift",
+    "C.PlanetSwiftTests-release.module" : "PlanetSwiftTests"
+  },
+  "testDiscoveryCommands" : {
+
+  }
+}

@@ -1,0 +1,4 @@
+module PlanetSwift {
+    header "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/PlanetSwift.build/PlanetSwift-Swift.h"
+    requires objc
+}

@@ -1,0 +1,4 @@
+module AEXML {
+    header "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/x86_64-apple-macosx/release/AEXML.build/AEXML-Swift.h"
+    requires objc
+}
