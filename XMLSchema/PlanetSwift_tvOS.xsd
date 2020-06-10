@@ -519,7 +519,7 @@
 			<appinfo>NAMED_ENUM</appinfo>
 		</annotation>
 		<restriction base="string">
-			<enumeration value="Default" />
+			<enumeration value="`default`" />
 			<enumeration value="go" />
 			<enumeration value="google" />
 			<enumeration value="join" />
@@ -538,8 +538,8 @@
 			<appinfo>NAMED_ENUM</appinfo>
 		</annotation>
 		<restriction base="string">
-			<enumeration value="Default" />
-			<enumeration value="ASCIICapable" />
+			<enumeration value="`default`" />
+			<enumeration value="asciiCapable" />
 			<enumeration value="numbersAndPunctuation" />
 			<enumeration value="URL" />
 			<enumeration value="numberPad" />
@@ -569,7 +569,7 @@
 			<appinfo>NAMED_ENUM</appinfo>
 		</annotation>
 		<restriction base="string">
-			<enumeration value="Default" />
+			<enumeration value="`default`" />
 			<enumeration value="no" />
 			<enumeration value="yes" />
 		</restriction>
@@ -580,7 +580,7 @@
 			<appinfo>NAMED_ENUM</appinfo>
 		</annotation>
 		<restriction base="string">
-			<enumeration value="Default" />
+			<enumeration value="`default`" />
 			<enumeration value="no" />
 			<enumeration value="yes" />
 		</restriction>

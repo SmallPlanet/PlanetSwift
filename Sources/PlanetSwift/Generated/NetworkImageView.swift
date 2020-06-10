@@ -5,9 +5,9 @@
 import UIKit
 
 public class NetworkImageView: NetworkImageViewBase {
-    
+
     lazy public var networkImageView: PlanetNetworkImageView = PlanetNetworkImageView()
-	override public var imageView : UIImageView {
+	override public var imageView: UIImageView {
 		get {
 			return networkImageView
 		}
@@ -17,8 +17,8 @@ public class NetworkImageView: NetworkImageViewBase {
 			}
 		}
 	}
-    
-    public func setImageWithPath(_ path:String?, completion:((_ success:Bool)->Void)?) {
+
+    public func setImageWithPath(_ path: String?, completion: ((_ success: Bool) -> Void)?) {
         if let path = path, let url = URL(string: path) {
             var placeholder: UIImage?
             if let placeholderPath = placeholderPath {
@@ -30,18 +30,18 @@ public class NetworkImageView: NetworkImageViewBase {
             completion?(false)
         }
     }
-	
+
     public override func setImageWithString(_ image: String?) {
 		setImageWithPath(image, completion: nil)
 	}
-	
+
 	open override func gaxbPrepare() {
 		super.gaxbPrepare()
-		
+
         if let placeholderPath = placeholderPath {
             networkImageView.image = UIImage(contentsOfFile: String(bundlePath: placeholderPath))
         }
-        
+
 		if let placeholderContentMode = placeholderContentMode {
 			networkImageView.placeholderContentMode = UIView.ContentMode.fromPlanetUIContentMode(placeholderContentMode)
 		}

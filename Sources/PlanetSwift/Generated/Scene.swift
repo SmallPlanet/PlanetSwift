@@ -9,5 +9,5 @@ public class Scene: SceneBase {
     public override func isScopeContainer() -> Bool {
         return true
     }
-    
+
 }

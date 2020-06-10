@@ -5,24 +5,24 @@
 import UIKit
 
 public class Switch: SwitchBase {
-    lazy public var switch_ = UISwitch()
-    
+    lazy public var localSwitch = UISwitch()
+
     override public var control: UIControl? {
         get {
-            return switch_
+            return localSwitch
         }
         set {
             if let newValue = newValue as? UISwitch {
-                switch_ = newValue
+                localSwitch = newValue
             }
         }
     }
-    
+
     open override func gaxbPrepare() {
         super.gaxbPrepare()
-        switch_.tintColor = tintColor
-        switch_.thumbTintColor = thumbTintColor
-        switch_.onTintColor = onTintColor
-        switch_.isOn = true
+        localSwitch.tintColor = tintColor
+        localSwitch.thumbTintColor = thumbTintColor
+        localSwitch.onTintColor = onTintColor
+        localSwitch.isOn = true
     }
 }

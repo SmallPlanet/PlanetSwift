@@ -1,1 +1,0 @@
-{"object": {"dependencies": [{"basedOn": null, "packageRef": {"identity": "aexml", "kind": "remote", "name": "AEXML", "path": "https://github.com/SmallPlanetSporks/AEXML.git"}, "state": {"checkoutState": {"branch": "spmaster", "revision": "67663d951a325b6132be757b5979c2a032f82fc9", "version": null}, "name": "checkout"}, "subpath": "AEXML"}]}, "version": 3}

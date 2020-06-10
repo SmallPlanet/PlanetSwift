@@ -5,15 +5,15 @@
 import UIKit
 
 open class GestureRecognizer: GestureRecognizerBase {
-	
-	public var recognizer:UIGestureRecognizer?
+
+	public var recognizer: UIGestureRecognizer?
 	private lazy var helper = GestureRecognizerHelper()
-	
+
 	open override func gaxbPrepare() {
 		super.gaxbPrepare()
-		
+
 		if let recognizer = recognizer {
-			
+
 			if let cancelsTouchesInView = cancelsTouchesInView {
 				recognizer.cancelsTouchesInView = cancelsTouchesInView
 			}
@@ -23,17 +23,17 @@ open class GestureRecognizer: GestureRecognizerBase {
 			if let delaysTouchesEnded = delaysTouchesEnded {
 				recognizer.delaysTouchesEnded = delaysTouchesEnded
 			}
-			
-			if let _ = onStateChange {
+
+			if onStateChange != nil {
 				helper.delegate = self
 				recognizer.addTarget(helper, action: #selector(GestureRecognizerHelper.recognizerStateDidChange(_:)))
 			}
 		}
 	}
-	
+
 	open override func gaxbDidPrepare() {
 		super.gaxbDidPrepare()
-		
+
 		if let recognizer = recognizer,
             let view = view,
             let scope = scope() as? Object,
@@ -41,8 +41,8 @@ open class GestureRecognizer: GestureRecognizerBase {
 			referencedView.view.addGestureRecognizer(recognizer)
 		}
 	}
-	
-	func recognizerStateDidChange(_ recognizer:UIGestureRecognizer) {
+
+	func recognizerStateDidChange(_ recognizer: UIGestureRecognizer) {
 		if let onStateChange = onStateChange {
 			let (scopeObject, name) = self.parseNotification(onStateChange)
 			if let name = name {
@@ -54,8 +54,8 @@ open class GestureRecognizer: GestureRecognizerBase {
 
 class GestureRecognizerHelper: NSObject {
 	weak var delegate: GestureRecognizer?
-	
-    @objc func recognizerStateDidChange(_ recognizer:UIGestureRecognizer) {
+
+    @objc func recognizerStateDidChange(_ recognizer: UIGestureRecognizer) {
 		delegate?.recognizerStateDidChange(recognizer)
 	}
 }

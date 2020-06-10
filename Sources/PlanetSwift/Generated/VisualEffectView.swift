@@ -6,14 +6,14 @@ import UIKit
 
 public class VisualEffectView: VisualEffectViewBase {
     public var effectView: UIVisualEffectView?
-    
+
     override public var view: UIView {
         get {
             if NSClassFromString("UIVisualEffectView") != nil {
                 if effectView != nil {
                     return effectView!
                 }
-                
+
                 if let effect = effect {
                     effectView = UIVisualEffectView(effect: effect.uiBlurEffect)
                     return effectView!
@@ -25,5 +25,5 @@ public class VisualEffectView: VisualEffectViewBase {
             effectView = newValue as? UIVisualEffectView
         }
     }
-    
+
 }

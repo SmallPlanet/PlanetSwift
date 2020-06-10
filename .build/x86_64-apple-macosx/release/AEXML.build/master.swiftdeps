@@ -1,9 +1,0 @@
-version: "Apple Swift version 5.2.2 (swiftlang-1103.0.32.6 clang-1103.0.32.51)"
-options: "7d274a1982c73b4101c836a1ca6ed022"
-build_time: [1591821599, 714780000]
-inputs:
-  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/checkouts/AEXML/Sources/AEXML/Document.swift": [9223372036, 854775807]
-  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/checkouts/AEXML/Sources/AEXML/Element.swift": [9223372036, 854775807]
-  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/checkouts/AEXML/Sources/AEXML/Error.swift": [9223372036, 854775807]
-  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/checkouts/AEXML/Sources/AEXML/Options.swift": [9223372036, 854775807]
-  "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/checkouts/AEXML/Sources/AEXML/Parser.swift": [9223372036, 854775807]

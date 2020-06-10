@@ -6,7 +6,7 @@ import UIKit
 
 public class WebView: WebViewBase {
     lazy public var webview = UIWebView()
-    
+
     override open var view: UIView {
         get {
             return webview
@@ -17,10 +17,10 @@ public class WebView: WebViewBase {
             }
         }
     }
-    
+
     open override func gaxbPrepare() {
         super.gaxbPrepare()
-        
+
         if let url = url, let requestURL = URL(string: url) {
             let request = URLRequest(url: requestURL)
             webview.loadRequest(request)

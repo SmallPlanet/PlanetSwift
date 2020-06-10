@@ -16,10 +16,10 @@ public class PageControl: PageControlBase {
 			}
 		}
 	}
-	
+
 	open override func gaxbPrepare() {
 		super.gaxbPrepare()
-		
+
 		if let hidesForSinglePage = hidesForSinglePage {
 			pageControl.hidesForSinglePage = hidesForSinglePage
 		}

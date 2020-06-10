@@ -7,7 +7,7 @@ import UIKit
 public class StackView: StackViewBase {
     @available(iOS 9.0, *)
     lazy public var stackView = UIStackView(frame: CGRect.zero)
-    
+
     override open var view: UIView {
         get {
             if #available(iOS 9.0, *) {
@@ -49,7 +49,7 @@ public class StackView: StackViewBase {
             stackView.spacing = CGFloat(spacing)
         }
     }
-    
+
     override internal func addSubview(_ child: UIView) {
         if #available(iOS 9.0, *) {
             stackView.addArrangedSubview(child)

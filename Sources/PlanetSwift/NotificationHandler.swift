@@ -25,20 +25,21 @@
 //    ...
 //    Notification.SomethingImportant.post()
 
+// swiftlint:disable line_length
 
 import Foundation
 
 public protocol NotificationHandler {
     var name: String { get }
-    func post(_ object: AnyObject?, userInfo: [NSObject : AnyObject]?)
+    func post(_ object: AnyObject?, userInfo: [NSObject: AnyObject]?)
     func observe(_ observer: AnyObject, selector: Selector, object: AnyObject?)
     func remove(_ observer: AnyObject, object: AnyObject?)
     static func remove(_ observer: AnyObject)
 }
 
 public extension NotificationHandler {
-    
-    func post(_ object: AnyObject? = nil, userInfo: [NSObject : AnyObject]? = nil) {
+
+    func post(_ object: AnyObject? = nil, userInfo: [NSObject: AnyObject]? = nil) {
         NotificationCenter.`default`.post(name: Foundation.Notification.Name(rawValue: name), object: object, userInfo: userInfo)
     }
     func observe(_ observer: AnyObject, selector: Selector, object: AnyObject? = nil) {
@@ -50,5 +51,4 @@ public extension NotificationHandler {
     static func remove(_ observer: AnyObject) {
         NotificationCenter.`default`.removeObserver(observer)
     }
-    
 }

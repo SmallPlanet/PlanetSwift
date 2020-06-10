@@ -11,7 +11,7 @@ private let _findLocalizable = false
 private var _localizable = Set<String>()
 
 public class Label: LabelBase {
-    
+
     lazy public var label: PlanetLabel = PlanetLabel()
     override open var view: UIView {
         get {
@@ -23,11 +23,11 @@ public class Label: LabelBase {
             }
         }
     }
-	
+
     open override func gaxbPrepare() {
         super.gaxbPrepare()
         let paragraphStyle = NSMutableParagraphStyle()
-		
+
 		if let lineSpacing = lineSpacing {
             paragraphStyle.lineSpacing = CGFloat(lineSpacing)
         }
@@ -57,7 +57,7 @@ public class Label: LabelBase {
         if let fontSize = fontSize {
             label.font = label.font.withSize(CGFloat(fontSize))
         }
-		
+
 		//attributes that are sensitive to the existence (or non-existence) of _paragraphStyle
 		if let textAlignment = textAlignment {
             paragraphStyle.alignment = NSTextAlignment.fromPlanetUITextAlignment(textAlignment)
@@ -67,28 +67,28 @@ public class Label: LabelBase {
             paragraphStyle.lineBreakMode = NSLineBreakMode.fromPlanetUILineBreakMode(lineBreakMode)
 			label.lineBreakMode = NSLineBreakMode.fromPlanetUILineBreakMode(lineBreakMode)
 		}
-        
-        let localizedText = text.map{NSLocalizedString($0, comment: "")} ?? ""
+
+        let localizedText = text.map { NSLocalizedString($0, comment: "") } ?? ""
         checkUnlocalized(text, localized: localizedText)
-        
+
         let attributedString = NSMutableAttributedString(string: localizedText)
-        let attributes = [NSAttributedString.Key.paragraphStyle : paragraphStyle]
+        let attributes = [NSAttributedString.Key.paragraphStyle: paragraphStyle]
         attributedString.setAttributes(attributes, range: NSRange(location: 0, length: attributedString.length))
         label.attributedText = attributedString
     }
-    
+
     public func updateText(_ newText: String?) {
         text = newText
         gaxbPrepare()
     }
-    
+
     func checkUnlocalized(_ text: String?, localized: String) {
         guard let text = text, text.count > 0 && _findLocalizable else { return }
         guard text == localized else { return }
         let output = "\"\(text)\" = \"\(localized)\";"
         _localizable.insert(output)
     }
-    
+
     public class func printLocalizable() {
         guard _findLocalizable else { return }
         print("//--------- localizable strings start --------")

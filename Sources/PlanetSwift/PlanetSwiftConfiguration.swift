@@ -6,16 +6,19 @@
 //  Copyright (c) 2015 Terra Holdings. All rights reserved.
 //
 
+// swiftlint:disable identifier_name
+// swiftlint:disable line_length
+
 import Foundation
 
-public let PlanetSwiftConfiguration_allParametersKey = "PlanetSwift"
-public let PlanetSwiftConfiguration_stylesheetPathKey = "styleSheetPath"
-public let PlanetSwiftConfiguration_configPathKey = "configurationPath"
+public let planetSwiftConfigurationAllParametersKey = "PlanetSwift"
+public let planetSwiftConfigurationStylesheetPathKey = "styleSheetPath"
+public let planetSwiftConfigurationConfigPathKey = "configurationPath"
 
 public class PlanetSwiftConfiguration {
-	
-	public class func valueForKey(_ key:String) -> AnyObject? {
-		let dictionary = Bundle.main.object(forInfoDictionaryKey: PlanetSwiftConfiguration_allParametersKey) as? Dictionary<String, AnyObject>
+
+	public class func valueForKey(_ key: String) -> AnyObject? {
+        let dictionary = Bundle.main.object(forInfoDictionaryKey: planetSwiftConfigurationAllParametersKey) as? [String: AnyObject]
 		return dictionary?[key]
 	}
 }

@@ -22,3 +22,7 @@ DerivedData
 *.ipa
 *.xcuserstate
 .DS_Store
+
+# swiftpm
+#
+.build

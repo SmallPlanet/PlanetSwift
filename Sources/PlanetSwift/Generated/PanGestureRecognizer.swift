@@ -17,10 +17,10 @@ public class PanGestureRecognizer: PanGestureRecognizerBase {
 			}
 		}
 	}
-	
+
 	open override func gaxbPrepare() {
 		super.gaxbPrepare()
-		
+
         #if os(iOS)
         if let maximumNumberOfTouches = maximumNumberOfTouches {
             panRecognizer.maximumNumberOfTouches = maximumNumberOfTouches

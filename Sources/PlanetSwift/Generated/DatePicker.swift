@@ -6,7 +6,7 @@ import UIKit
 
 public class DatePicker: DatePickerBase {
     lazy public var picker = UIDatePicker()
-    
+
     override open var view: UIView {
         get {
             return picker
@@ -17,10 +17,10 @@ public class DatePicker: DatePickerBase {
             }
         }
     }
-    
+
     open override func gaxbPrepare() {
         super.gaxbPrepare()
-        
+
         if let datePickerMode = datePickerMode {
             picker.datePickerMode = UIDatePicker.Mode.fromPlanetUIDatePickerMode(datePickerMode)
         }

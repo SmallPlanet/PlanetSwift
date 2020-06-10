@@ -6,7 +6,7 @@ import UIKit
 
 public class PickerView: PickerViewBase {
     lazy public var picker = UIPickerView()
-    
+
     public var delegate: UIPickerViewDelegate? {
         didSet {
             picker.delegate = delegate
@@ -17,7 +17,7 @@ public class PickerView: PickerViewBase {
             picker.dataSource = datasource
         }
     }
-    
+
     override public var view: UIView {
         get {
             return picker
@@ -28,34 +28,34 @@ public class PickerView: PickerViewBase {
             }
         }
     }
-    
+
     // Getting Dimensions
     public func numberOfComponents() -> Int {
         return picker.numberOfComponents
     }
-    
+
     public func numberOfRowsInComponent(_ component: Int) -> Int {
         return picker.numberOfRows(inComponent: component)
     }
-    
+
     public func rowSizeForComponent(_ component: Int) -> CGSize {
         return picker.rowSize(forComponent: component)
     }
-    
+
     // Reloading
     public func reloadAll() {
         picker.reloadAllComponents()
     }
-    
+
     public func reloadComponent(_ component: Int) {
         picker.reloadComponent(component)
     }
-    
+
     // Selecting
     public func selectRow(_ row: Int, inComponent component: Int, animated animates: Bool) {
         picker.selectRow(row, inComponent: component, animated: animates)
     }
-    
+
     public func selectRow(_ row: Int, inComponent component: Int) {
         selectRow(row, inComponent: component, animated: false)
     }

@@ -16,10 +16,10 @@ public class ScrollView: ScrollViewBase {
 			}
 		}
 	}
-	
+
 	open override func gaxbPrepare() {
 		super.gaxbPrepare()
-		
+
 		if let contentSize = contentSize {
 			scrollView.contentSize = contentSize
 		}

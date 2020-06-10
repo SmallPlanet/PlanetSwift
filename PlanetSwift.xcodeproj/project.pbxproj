@@ -1,1729 +1,1049 @@
 // !$*UTF8*$!
 {
-   archiveVersion = "1";
-   objectVersion = "46";
-   objects = {
-      "AEXML::AEXML" = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_112";
-         buildPhases = (
-            "OBJ_115",
-            "OBJ_121"
-         );
-         dependencies = (
-         );
-         name = "AEXML";
-         productName = "AEXML";
-         productReference = "AEXML::AEXML::Product";
-         productType = "com.apple.product-type.framework";
-      };
-      "AEXML::AEXML::Product" = {
-         isa = "PBXFileReference";
-         path = "AEXML.framework";
-         sourceTree = "BUILT_PRODUCTS_DIR";
-      };
-      "AEXML::SwiftPMPackageDescription" = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_123";
-         buildPhases = (
-            "OBJ_126"
-         );
-         dependencies = (
-         );
-         name = "AEXMLPackageDescription";
-         productName = "AEXMLPackageDescription";
-         productType = "com.apple.product-type.framework";
-      };
-      "OBJ_1" = {
-         isa = "PBXProject";
-         attributes = {
-            LastSwiftMigration = "9999";
-            LastUpgradeCheck = "9999";
-         };
-         buildConfigurationList = "OBJ_2";
-         compatibilityVersion = "Xcode 3.2";
-         developmentRegion = "en";
-         hasScannedForEncodings = "0";
-         knownRegions = (
-            "en"
-         );
-         mainGroup = "OBJ_5";
-         productRefGroup = "OBJ_101";
-         projectDirPath = ".";
-         targets = (
-            "AEXML::AEXML",
-            "AEXML::SwiftPMPackageDescription",
-            "PlanetSwift::PlanetSwift",
-            "PlanetSwift::SwiftPMPackageDescription",
-            "PlanetSwift::PlanetSwiftPackageTests::ProductTarget",
-            "PlanetSwift::PlanetSwiftTests"
-         );
-      };
-      "OBJ_10" = {
-         isa = "PBXFileReference";
-         path = "PlanetSwift-Bridging-Header.h";
-         sourceTree = "<group>";
-      };
-      "OBJ_100" = {
-         isa = "PBXFileReference";
-         explicitFileType = "sourcecode.swift";
-         name = "Package.swift";
-         path = "/Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/checkouts/AEXML/Package.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_101" = {
-         isa = "PBXGroup";
-         children = (
-            "PlanetSwift::PlanetSwiftTests::Product",
-            "AEXML::AEXML::Product",
-            "PlanetSwift::PlanetSwift::Product"
-         );
-         name = "Products";
-         path = "";
-         sourceTree = "BUILT_PRODUCTS_DIR";
-      };
-      "OBJ_105" = {
-         isa = "PBXFileReference";
-         path = "OLD";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_106" = {
-         isa = "PBXFileReference";
-         path = "Tools";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_107" = {
-         isa = "PBXFileReference";
-         path = "XMLSchema";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_108" = {
-         isa = "PBXFileReference";
-         path = "LICENSE";
-         sourceTree = "<group>";
-      };
-      "OBJ_109" = {
-         isa = "PBXFileReference";
-         path = "Makefile";
-         sourceTree = "<group>";
-      };
-      "OBJ_11" = {
-         isa = "PBXFileReference";
-         path = "PlanetSwift.h";
-         sourceTree = "<group>";
-      };
-      "OBJ_110" = {
-         isa = "PBXFileReference";
-         path = "README.md";
-         sourceTree = "<group>";
-      };
-      "OBJ_112" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_113",
-            "OBJ_114"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_113" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "PlanetSwift.xcodeproj/AEXML_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "AEXML";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "AEXML";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "3.0";
-         };
-         name = "Debug";
-      };
-      "OBJ_114" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "PlanetSwift.xcodeproj/AEXML_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "AEXML";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "AEXML";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "3.0";
-         };
-         name = "Release";
-      };
-      "OBJ_115" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_116",
-            "OBJ_117",
-            "OBJ_118",
-            "OBJ_119",
-            "OBJ_120"
-         );
-      };
-      "OBJ_116" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_95";
-      };
-      "OBJ_117" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_96";
-      };
-      "OBJ_118" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_97";
-      };
-      "OBJ_119" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_98";
-      };
-      "OBJ_12" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_13",
-            "OBJ_14",
-            "OBJ_15"
-         );
-         name = "GaxbTypes";
-         path = "GaxbTypes";
-         sourceTree = "<group>";
-      };
-      "OBJ_120" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_99";
-      };
-      "OBJ_121" = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-         );
-      };
-      "OBJ_123" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_124",
-            "OBJ_125"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_124" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            LD = "/usr/bin/true";
-            OTHER_SWIFT_FLAGS = (
-               "-swift-version",
-               "5",
-               "-I",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
-               "-target",
-               "x86_64-apple-macosx10.10",
-               "-sdk",
-               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
-               "-package-description-version",
-               "5.0.0"
-            );
-            SWIFT_VERSION = "5.0";
-         };
-         name = "Debug";
-      };
-      "OBJ_125" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            LD = "/usr/bin/true";
-            OTHER_SWIFT_FLAGS = (
-               "-swift-version",
-               "5",
-               "-I",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
-               "-target",
-               "x86_64-apple-macosx10.10",
-               "-sdk",
-               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
-               "-package-description-version",
-               "5.0.0"
-            );
-            SWIFT_VERSION = "5.0";
-         };
-         name = "Release";
-      };
-      "OBJ_126" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_127"
-         );
-      };
-      "OBJ_127" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_100";
-      };
-      "OBJ_129" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_130",
-            "OBJ_131"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_13" = {
-         isa = "PBXFileReference";
-         path = "Gaxb.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_130" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "PlanetSwift.xcodeproj/PlanetSwift_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "PlanetSwift";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "PlanetSwift";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
-         name = "Debug";
-      };
-      "OBJ_131" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            ENABLE_TESTABILITY = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "PlanetSwift.xcodeproj/PlanetSwift_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            PRODUCT_BUNDLE_IDENTIFIER = "PlanetSwift";
-            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-            SKIP_INSTALL = "YES";
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "PlanetSwift";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
-         name = "Release";
-      };
-      "OBJ_132" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_133",
-            "OBJ_134",
-            "OBJ_135",
-            "OBJ_136",
-            "OBJ_137",
-            "OBJ_138",
-            "OBJ_139",
-            "OBJ_140",
-            "OBJ_141",
-            "OBJ_142",
-            "OBJ_143",
-            "OBJ_144",
-            "OBJ_145",
-            "OBJ_146",
-            "OBJ_147",
-            "OBJ_148",
-            "OBJ_149",
-            "OBJ_150",
-            "OBJ_151",
-            "OBJ_152",
-            "OBJ_153",
-            "OBJ_154",
-            "OBJ_155",
-            "OBJ_156",
-            "OBJ_157",
-            "OBJ_158",
-            "OBJ_159",
-            "OBJ_160",
-            "OBJ_161",
-            "OBJ_162",
-            "OBJ_163",
-            "OBJ_164",
-            "OBJ_165",
-            "OBJ_166",
-            "OBJ_167",
-            "OBJ_168",
-            "OBJ_169",
-            "OBJ_170",
-            "OBJ_171",
-            "OBJ_172",
-            "OBJ_173",
-            "OBJ_174",
-            "OBJ_175",
-            "OBJ_176",
-            "OBJ_177",
-            "OBJ_178",
-            "OBJ_179",
-            "OBJ_180",
-            "OBJ_181",
-            "OBJ_182",
-            "OBJ_183",
-            "OBJ_184",
-            "OBJ_185",
-            "OBJ_186",
-            "OBJ_187",
-            "OBJ_188",
-            "OBJ_189",
-            "OBJ_190",
-            "OBJ_191",
-            "OBJ_192",
-            "OBJ_193",
-            "OBJ_194",
-            "OBJ_195",
-            "OBJ_196",
-            "OBJ_197",
-            "OBJ_198",
-            "OBJ_199",
-            "OBJ_200",
-            "OBJ_201",
-            "OBJ_202"
-         );
-      };
-      "OBJ_133" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_13";
-      };
-      "OBJ_134" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_14";
-      };
-      "OBJ_135" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_15";
-      };
-      "OBJ_136" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_17";
-      };
-      "OBJ_137" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_18";
-      };
-      "OBJ_138" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_19";
-      };
-      "OBJ_139" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_20";
-      };
-      "OBJ_14" = {
-         isa = "PBXFileReference";
-         path = "GaxbTypes.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_140" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_21";
-      };
-      "OBJ_141" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_22";
-      };
-      "OBJ_142" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_23";
-      };
-      "OBJ_143" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_24";
-      };
-      "OBJ_144" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_25";
-      };
-      "OBJ_145" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_26";
-      };
-      "OBJ_146" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_27";
-      };
-      "OBJ_147" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_28";
-      };
-      "OBJ_148" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_29";
-      };
-      "OBJ_149" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_30";
-      };
-      "OBJ_15" = {
-         isa = "PBXFileReference";
-         path = "String+Bundle.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_150" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_31";
-      };
-      "OBJ_151" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_32";
-      };
-      "OBJ_152" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_33";
-      };
-      "OBJ_153" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_34";
-      };
-      "OBJ_154" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_35";
-      };
-      "OBJ_155" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_36";
-      };
-      "OBJ_156" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_37";
-      };
-      "OBJ_157" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_38";
-      };
-      "OBJ_158" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_39";
-      };
-      "OBJ_159" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_40";
-      };
-      "OBJ_16" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_17",
-            "OBJ_18",
-            "OBJ_19",
-            "OBJ_20",
-            "OBJ_21",
-            "OBJ_22",
-            "OBJ_23",
-            "OBJ_24",
-            "OBJ_25",
-            "OBJ_26",
-            "OBJ_27",
-            "OBJ_28",
-            "OBJ_29",
-            "OBJ_30",
-            "OBJ_31",
-            "OBJ_32",
-            "OBJ_33",
-            "OBJ_34",
-            "OBJ_35",
-            "OBJ_36",
-            "OBJ_37",
-            "OBJ_38",
-            "OBJ_39",
-            "OBJ_40",
-            "OBJ_41",
-            "OBJ_42",
-            "OBJ_43",
-            "OBJ_44",
-            "OBJ_45",
-            "OBJ_46",
-            "OBJ_47",
-            "OBJ_48",
-            "OBJ_49",
-            "OBJ_50",
-            "OBJ_51",
-            "OBJ_52",
-            "OBJ_53",
-            "OBJ_54",
-            "OBJ_55",
-            "OBJ_56",
-            "OBJ_57",
-            "OBJ_58",
-            "OBJ_59",
-            "OBJ_60",
-            "OBJ_61",
-            "OBJ_62",
-            "OBJ_63",
-            "OBJ_64",
-            "OBJ_65",
-            "OBJ_66",
-            "OBJ_67",
-            "OBJ_68",
-            "OBJ_69",
-            "OBJ_70",
-            "OBJ_71",
-            "OBJ_72",
-            "OBJ_73",
-            "OBJ_74"
-         );
-         name = "Generated";
-         path = "Generated";
-         sourceTree = "<group>";
-      };
-      "OBJ_160" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_41";
-      };
-      "OBJ_161" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_42";
-      };
-      "OBJ_162" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_43";
-      };
-      "OBJ_163" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_44";
-      };
-      "OBJ_164" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_45";
-      };
-      "OBJ_165" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_46";
-      };
-      "OBJ_166" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_47";
-      };
-      "OBJ_167" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_48";
-      };
-      "OBJ_168" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_49";
-      };
-      "OBJ_169" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_50";
-      };
-      "OBJ_17" = {
-         isa = "PBXFileReference";
-         path = "ActivityIndicatorView.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_170" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_51";
-      };
-      "OBJ_171" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_52";
-      };
-      "OBJ_172" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_53";
-      };
-      "OBJ_173" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_54";
-      };
-      "OBJ_174" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_55";
-      };
-      "OBJ_175" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_56";
-      };
-      "OBJ_176" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_57";
-      };
-      "OBJ_177" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_58";
-      };
-      "OBJ_178" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_59";
-      };
-      "OBJ_179" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_60";
-      };
-      "OBJ_18" = {
-         isa = "PBXFileReference";
-         path = "ActivityIndicatorViewBase.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_180" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_61";
-      };
-      "OBJ_181" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_62";
-      };
-      "OBJ_182" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_63";
-      };
-      "OBJ_183" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_64";
-      };
-      "OBJ_184" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_65";
-      };
-      "OBJ_185" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_66";
-      };
-      "OBJ_186" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_67";
-      };
-      "OBJ_187" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_68";
-      };
-      "OBJ_188" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_69";
-      };
-      "OBJ_189" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_70";
-      };
-      "OBJ_19" = {
-         isa = "PBXFileReference";
-         path = "Button.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_190" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_71";
-      };
-      "OBJ_191" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_72";
-      };
-      "OBJ_192" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_73";
-      };
-      "OBJ_193" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_74";
-      };
-      "OBJ_194" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_75";
-      };
-      "OBJ_195" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_76";
-      };
-      "OBJ_196" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_77";
-      };
-      "OBJ_197" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_78";
-      };
-      "OBJ_198" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_79";
-      };
-      "OBJ_199" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_81";
-      };
-      "OBJ_2" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_3",
-            "OBJ_4"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_20" = {
-         isa = "PBXFileReference";
-         path = "ButtonBase.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_200" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_82";
-      };
-      "OBJ_201" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_83";
-      };
-      "OBJ_202" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_84";
-      };
-      "OBJ_203" = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-            "OBJ_204"
-         );
-      };
-      "OBJ_204" = {
-         isa = "PBXBuildFile";
-         fileRef = "AEXML::AEXML::Product";
-      };
-      "OBJ_205" = {
-         isa = "PBXTargetDependency";
-         target = "AEXML::AEXML";
-      };
-      "OBJ_207" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_208",
-            "OBJ_209"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_208" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            LD = "/usr/bin/true";
-            OTHER_SWIFT_FLAGS = (
-               "-swift-version",
-               "5",
-               "-I",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
-               "-target",
-               "x86_64-apple-macosx10.10",
-               "-sdk",
-               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
-               "-package-description-version",
-               "5.0.0"
-            );
-            SWIFT_VERSION = "5.0";
-         };
-         name = "Debug";
-      };
-      "OBJ_209" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            LD = "/usr/bin/true";
-            OTHER_SWIFT_FLAGS = (
-               "-swift-version",
-               "5",
-               "-I",
-               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
-               "-target",
-               "x86_64-apple-macosx10.10",
-               "-sdk",
-               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
-               "-package-description-version",
-               "5.0.0"
-            );
-            SWIFT_VERSION = "5.0";
-         };
-         name = "Release";
-      };
-      "OBJ_21" = {
-         isa = "PBXFileReference";
-         path = "Code.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_210" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_211"
-         );
-      };
-      "OBJ_211" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_6";
-      };
-      "OBJ_213" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_214",
-            "OBJ_215"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_214" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-         };
-         name = "Debug";
-      };
-      "OBJ_215" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-         };
-         name = "Release";
-      };
-      "OBJ_216" = {
-         isa = "PBXTargetDependency";
-         target = "PlanetSwift::PlanetSwiftTests";
-      };
-      "OBJ_218" = {
-         isa = "XCConfigurationList";
-         buildConfigurations = (
-            "OBJ_219",
-            "OBJ_220"
-         );
-         defaultConfigurationIsVisible = "0";
-         defaultConfigurationName = "Release";
-      };
-      "OBJ_219" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CLANG_ENABLE_MODULES = "YES";
-            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "PlanetSwift.xcodeproj/PlanetSwiftTests_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "@loader_path/../Frameworks",
-               "@loader_path/Frameworks"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "PlanetSwiftTests";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
-         name = "Debug";
-      };
-      "OBJ_22" = {
-         isa = "PBXFileReference";
-         path = "CodeBase.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_220" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CLANG_ENABLE_MODULES = "YES";
-            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
-            FRAMEWORK_SEARCH_PATHS = (
-               "$(inherited)",
-               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
-            );
-            HEADER_SEARCH_PATHS = (
-               "$(inherited)"
-            );
-            INFOPLIST_FILE = "PlanetSwift.xcodeproj/PlanetSwiftTests_Info.plist";
-            IPHONEOS_DEPLOYMENT_TARGET = "8.0";
-            LD_RUNPATH_SEARCH_PATHS = (
-               "$(inherited)",
-               "@loader_path/../Frameworks",
-               "@loader_path/Frameworks"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_CFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_LDFLAGS = (
-               "$(inherited)"
-            );
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)"
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)"
-            );
-            SWIFT_VERSION = "5.0";
-            TARGET_NAME = "PlanetSwiftTests";
-            TVOS_DEPLOYMENT_TARGET = "9.0";
-            WATCHOS_DEPLOYMENT_TARGET = "2.0";
-         };
-         name = "Release";
-      };
-      "OBJ_221" = {
-         isa = "PBXSourcesBuildPhase";
-         files = (
-            "OBJ_222",
-            "OBJ_223",
-            "OBJ_224",
-            "OBJ_225"
-         );
-      };
-      "OBJ_222" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_88";
-      };
-      "OBJ_223" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_89";
-      };
-      "OBJ_224" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_90";
-      };
-      "OBJ_225" = {
-         isa = "PBXBuildFile";
-         fileRef = "OBJ_91";
-      };
-      "OBJ_226" = {
-         isa = "PBXFrameworksBuildPhase";
-         files = (
-            "OBJ_227"
-         );
-      };
-      "OBJ_227" = {
-         isa = "PBXBuildFile";
-         fileRef = "AEXML::AEXML::Product";
-      };
-      "OBJ_228" = {
-         isa = "PBXTargetDependency";
-         target = "AEXML::AEXML";
-      };
-      "OBJ_23" = {
-         isa = "PBXFileReference";
-         path = "CollectionView.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_24" = {
-         isa = "PBXFileReference";
-         path = "CollectionViewBase.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_25" = {
-         isa = "PBXFileReference";
-         path = "Constraint.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_26" = {
-         isa = "PBXFileReference";
-         path = "ConstraintBase.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_27" = {
-         isa = "PBXFileReference";
-         path = "Control.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_28" = {
-         isa = "PBXFileReference";
-         path = "ControlBase.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_29" = {
-         isa = "PBXFileReference";
-         path = "Controller.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_3" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CLANG_ENABLE_OBJC_ARC = "YES";
-            COMBINE_HIDPI_IMAGES = "YES";
-            COPY_PHASE_STRIP = "NO";
-            DEBUG_INFORMATION_FORMAT = "dwarf";
-            DYLIB_INSTALL_NAME_BASE = "@rpath";
-            ENABLE_NS_ASSERTIONS = "YES";
-            GCC_OPTIMIZATION_LEVEL = "0";
-            GCC_PREPROCESSOR_DEFINITIONS = (
-               "$(inherited)",
-               "SWIFT_PACKAGE=1",
-               "DEBUG=1"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            ONLY_ACTIVE_ARCH = "YES";
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)",
-               "-DXcode"
-            );
-            PRODUCT_NAME = "$(TARGET_NAME)";
-            SDKROOT = "macosx";
-            SUPPORTED_PLATFORMS = (
-               "macosx",
-               "iphoneos",
-               "iphonesimulator",
-               "appletvos",
-               "appletvsimulator",
-               "watchos",
-               "watchsimulator"
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)",
-               "SWIFT_PACKAGE",
-               "DEBUG"
-            );
-            SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-            USE_HEADERMAP = "NO";
-         };
-         name = "Debug";
-      };
-      "OBJ_30" = {
-         isa = "PBXFileReference";
-         path = "ControllerBase.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_31" = {
-         isa = "PBXFileReference";
-         path = "DatePicker.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_32" = {
-         isa = "PBXFileReference";
-         path = "DatePickerBase.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_33" = {
-         isa = "PBXFileReference";
-         path = "GestureRecognizer.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_34" = {
-         isa = "PBXFileReference";
-         path = "GestureRecognizerBase.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_35" = {
-         isa = "PBXFileReference";
-         path = "ImageView.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_36" = {
-         isa = "PBXFileReference";
-         path = "ImageViewBase.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_37" = {
-         isa = "PBXFileReference";
-         path = "Label.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_38" = {
-         isa = "PBXFileReference";
-         path = "LabelBase.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_39" = {
-         isa = "PBXFileReference";
-         path = "NetworkImageView.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_4" = {
-         isa = "XCBuildConfiguration";
-         buildSettings = {
-            CLANG_ENABLE_OBJC_ARC = "YES";
-            COMBINE_HIDPI_IMAGES = "YES";
-            COPY_PHASE_STRIP = "YES";
-            DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-            DYLIB_INSTALL_NAME_BASE = "@rpath";
-            GCC_OPTIMIZATION_LEVEL = "s";
-            GCC_PREPROCESSOR_DEFINITIONS = (
-               "$(inherited)",
-               "SWIFT_PACKAGE=1"
-            );
-            MACOSX_DEPLOYMENT_TARGET = "10.10";
-            OTHER_SWIFT_FLAGS = (
-               "$(inherited)",
-               "-DXcode"
-            );
-            PRODUCT_NAME = "$(TARGET_NAME)";
-            SDKROOT = "macosx";
-            SUPPORTED_PLATFORMS = (
-               "macosx",
-               "iphoneos",
-               "iphonesimulator",
-               "appletvos",
-               "appletvsimulator",
-               "watchos",
-               "watchsimulator"
-            );
-            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
-               "$(inherited)",
-               "SWIFT_PACKAGE"
-            );
-            SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-            USE_HEADERMAP = "NO";
-         };
-         name = "Release";
-      };
-      "OBJ_40" = {
-         isa = "PBXFileReference";
-         path = "NetworkImageViewBase.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_41" = {
-         isa = "PBXFileReference";
-         path = "Notification.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_42" = {
-         isa = "PBXFileReference";
-         path = "NotificationBase.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_43" = {
-         isa = "PBXFileReference";
-         path = "Object.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_44" = {
-         isa = "PBXFileReference";
-         path = "ObjectBase.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_45" = {
-         isa = "PBXFileReference";
-         path = "PageControl.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_46" = {
-         isa = "PBXFileReference";
-         path = "PageControlBase.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_47" = {
-         isa = "PBXFileReference";
-         path = "PanGestureRecognizer.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_48" = {
-         isa = "PBXFileReference";
-         path = "PanGestureRecognizerBase.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_49" = {
-         isa = "PBXFileReference";
-         path = "PickerView.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_5" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_6",
-            "OBJ_7",
-            "OBJ_85",
-            "OBJ_92",
-            "OBJ_101",
-            "OBJ_105",
-            "OBJ_106",
-            "OBJ_107",
-            "OBJ_108",
-            "OBJ_109",
-            "OBJ_110"
-         );
-         path = "";
-         sourceTree = "<group>";
-      };
-      "OBJ_50" = {
-         isa = "PBXFileReference";
-         path = "PickerViewBase.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_51" = {
-         isa = "PBXFileReference";
-         path = "PinchGestureRecognizer.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_52" = {
-         isa = "PBXFileReference";
-         path = "PinchGestureRecognizerBase.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_53" = {
-         isa = "PBXFileReference";
-         path = "PlanetUI.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_54" = {
-         isa = "PBXFileReference";
-         path = "PlanetUIBase.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_55" = {
-         isa = "PBXFileReference";
-         path = "Scene.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_56" = {
-         isa = "PBXFileReference";
-         path = "SceneBase.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_57" = {
-         isa = "PBXFileReference";
-         path = "ScrollView.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_58" = {
-         isa = "PBXFileReference";
-         path = "ScrollViewBase.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_59" = {
-         isa = "PBXFileReference";
-         path = "SegmentedControl.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_6" = {
-         isa = "PBXFileReference";
-         explicitFileType = "sourcecode.swift";
-         path = "Package.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_60" = {
-         isa = "PBXFileReference";
-         path = "SegmentedControlBase.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_61" = {
-         isa = "PBXFileReference";
-         path = "StackView.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_62" = {
-         isa = "PBXFileReference";
-         path = "StackViewBase.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_63" = {
-         isa = "PBXFileReference";
-         path = "Switch.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_64" = {
-         isa = "PBXFileReference";
-         path = "SwitchBase.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_65" = {
-         isa = "PBXFileReference";
-         path = "TextField.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_66" = {
-         isa = "PBXFileReference";
-         path = "TextFieldBase.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_67" = {
-         isa = "PBXFileReference";
-         path = "TextView.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_68" = {
-         isa = "PBXFileReference";
-         path = "TextViewBase.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_69" = {
-         isa = "PBXFileReference";
-         path = "View.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_7" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_8"
-         );
-         name = "Sources";
-         path = "";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_70" = {
-         isa = "PBXFileReference";
-         path = "ViewBase.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_71" = {
-         isa = "PBXFileReference";
-         path = "VisualEffectView.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_72" = {
-         isa = "PBXFileReference";
-         path = "VisualEffectViewBase.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_73" = {
-         isa = "PBXFileReference";
-         path = "WebView.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_74" = {
-         isa = "PBXFileReference";
-         path = "WebViewBase.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_75" = {
-         isa = "PBXFileReference";
-         path = "ImageCache.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_76" = {
-         isa = "PBXFileReference";
-         path = "NotificationHandler.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_77" = {
-         isa = "PBXFileReference";
-         path = "PlanetCollectionViewController.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_78" = {
-         isa = "PBXFileReference";
-         path = "PlanetSwiftConfiguration.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_79" = {
-         isa = "PBXFileReference";
-         path = "PlanetViewController.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_8" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_9",
-            "OBJ_10",
-            "OBJ_11",
-            "OBJ_12",
-            "OBJ_16",
-            "OBJ_75",
-            "OBJ_76",
-            "OBJ_77",
-            "OBJ_78",
-            "OBJ_79",
-            "OBJ_80"
-         );
-         name = "PlanetSwift";
-         path = "Sources/PlanetSwift";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_80" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_81",
-            "OBJ_82",
-            "OBJ_83",
-            "OBJ_84"
-         );
-         name = "Views";
-         path = "Views";
-         sourceTree = "<group>";
-      };
-      "OBJ_81" = {
-         isa = "PBXFileReference";
-         path = "PlanetButton.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_82" = {
-         isa = "PBXFileReference";
-         path = "PlanetLabel.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_83" = {
-         isa = "PBXFileReference";
-         path = "PlanetNetworkImageView.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_84" = {
-         isa = "PBXFileReference";
-         path = "PlanetView.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_85" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_86"
-         );
-         name = "Tests";
-         path = "";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_86" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_87",
-            "OBJ_88",
-            "OBJ_89",
-            "OBJ_90",
-            "OBJ_91"
-         );
-         name = "PlanetSwiftTests";
-         path = "Tests/PlanetSwiftTests";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_87" = {
-         isa = "PBXFileReference";
-         path = "Info.plist";
-         sourceTree = "<group>";
-      };
-      "OBJ_88" = {
-         isa = "PBXFileReference";
-         path = "PlanetSwiftConstraintTests.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_89" = {
-         isa = "PBXFileReference";
-         path = "PlanetSwiftLabelTests.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_9" = {
-         isa = "PBXFileReference";
-         path = "Info.plist";
-         sourceTree = "<group>";
-      };
-      "OBJ_90" = {
-         isa = "PBXFileReference";
-         path = "PlanetSwiftTests.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_91" = {
-         isa = "PBXFileReference";
-         path = "PlanetSwiftViewTests.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_92" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_93"
-         );
-         name = "Dependencies";
-         path = "";
-         sourceTree = "<group>";
-      };
-      "OBJ_93" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_94",
-            "OBJ_100"
-         );
-         name = "AEXML";
-         path = "";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_94" = {
-         isa = "PBXGroup";
-         children = (
-            "OBJ_95",
-            "OBJ_96",
-            "OBJ_97",
-            "OBJ_98",
-            "OBJ_99"
-         );
-         name = "AEXML";
-         path = ".build/checkouts/AEXML/Sources/AEXML";
-         sourceTree = "SOURCE_ROOT";
-      };
-      "OBJ_95" = {
-         isa = "PBXFileReference";
-         path = "Document.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_96" = {
-         isa = "PBXFileReference";
-         path = "Element.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_97" = {
-         isa = "PBXFileReference";
-         path = "Error.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_98" = {
-         isa = "PBXFileReference";
-         path = "Options.swift";
-         sourceTree = "<group>";
-      };
-      "OBJ_99" = {
-         isa = "PBXFileReference";
-         path = "Parser.swift";
-         sourceTree = "<group>";
-      };
-      "PlanetSwift::PlanetSwift" = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_129";
-         buildPhases = (
-            "OBJ_132",
-            "OBJ_203"
-         );
-         dependencies = (
-            "OBJ_205"
-         );
-         name = "PlanetSwift";
-         productName = "PlanetSwift";
-         productReference = "PlanetSwift::PlanetSwift::Product";
-         productType = "com.apple.product-type.framework";
-      };
-      "PlanetSwift::PlanetSwift::Product" = {
-         isa = "PBXFileReference";
-         path = "PlanetSwift.framework";
-         sourceTree = "BUILT_PRODUCTS_DIR";
-      };
-      "PlanetSwift::PlanetSwiftPackageTests::ProductTarget" = {
-         isa = "PBXAggregateTarget";
-         buildConfigurationList = "OBJ_213";
-         buildPhases = (
-         );
-         dependencies = (
-            "OBJ_216"
-         );
-         name = "PlanetSwiftPackageTests";
-         productName = "PlanetSwiftPackageTests";
-      };
-      "PlanetSwift::PlanetSwiftTests" = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_218";
-         buildPhases = (
-            "OBJ_221",
-            "OBJ_226"
-         );
-         dependencies = (
-            "OBJ_228"
-         );
-         name = "PlanetSwiftTests";
-         productName = "PlanetSwiftTests";
-         productReference = "PlanetSwift::PlanetSwiftTests::Product";
-         productType = "com.apple.product-type.bundle.unit-test";
-      };
-      "PlanetSwift::PlanetSwiftTests::Product" = {
-         isa = "PBXFileReference";
-         path = "PlanetSwiftTests.xctest";
-         sourceTree = "BUILT_PRODUCTS_DIR";
-      };
-      "PlanetSwift::SwiftPMPackageDescription" = {
-         isa = "PBXNativeTarget";
-         buildConfigurationList = "OBJ_207";
-         buildPhases = (
-            "OBJ_210"
-         );
-         dependencies = (
-         );
-         name = "PlanetSwiftPackageDescription";
-         productName = "PlanetSwiftPackageDescription";
-         productType = "com.apple.product-type.framework";
-      };
-   };
-   rootObject = "OBJ_1";
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"PlanetSwift::PlanetSwiftPackageTests::ProductTarget" /* PlanetSwiftPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_212 /* Build configuration list for PBXAggregateTarget "PlanetSwiftPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_215 /* PBXTargetDependency */,
+			);
+			name = PlanetSwiftPackageTests;
+			productName = PlanetSwiftPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		OBJ_115 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_95 /* Document.swift */; };
+		OBJ_116 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_96 /* Element.swift */; };
+		OBJ_117 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_97 /* Error.swift */; };
+		OBJ_118 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_98 /* Options.swift */; };
+		OBJ_119 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_99 /* Parser.swift */; };
+		OBJ_126 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_100 /* Package.swift */; };
+		OBJ_132 /* Gaxb.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Gaxb.swift */; };
+		OBJ_133 /* GaxbTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* GaxbTypes.swift */; };
+		OBJ_134 /* String+Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* String+Bundle.swift */; };
+		OBJ_135 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* ActivityIndicatorView.swift */; };
+		OBJ_136 /* ActivityIndicatorViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* ActivityIndicatorViewBase.swift */; };
+		OBJ_137 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Button.swift */; };
+		OBJ_138 /* ButtonBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* ButtonBase.swift */; };
+		OBJ_139 /* Code.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Code.swift */; };
+		OBJ_140 /* CodeBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* CodeBase.swift */; };
+		OBJ_141 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* CollectionView.swift */; };
+		OBJ_142 /* CollectionViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* CollectionViewBase.swift */; };
+		OBJ_143 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* Constraint.swift */; };
+		OBJ_144 /* ConstraintBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* ConstraintBase.swift */; };
+		OBJ_145 /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Control.swift */; };
+		OBJ_146 /* ControlBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* ControlBase.swift */; };
+		OBJ_147 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* Controller.swift */; };
+		OBJ_148 /* ControllerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* ControllerBase.swift */; };
+		OBJ_149 /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* DatePicker.swift */; };
+		OBJ_150 /* DatePickerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* DatePickerBase.swift */; };
+		OBJ_151 /* GestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* GestureRecognizer.swift */; };
+		OBJ_152 /* GestureRecognizerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* GestureRecognizerBase.swift */; };
+		OBJ_153 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* ImageView.swift */; };
+		OBJ_154 /* ImageViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* ImageViewBase.swift */; };
+		OBJ_155 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* Label.swift */; };
+		OBJ_156 /* LabelBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* LabelBase.swift */; };
+		OBJ_157 /* NetworkImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* NetworkImageView.swift */; };
+		OBJ_158 /* NetworkImageViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* NetworkImageViewBase.swift */; };
+		OBJ_159 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* Notification.swift */; };
+		OBJ_160 /* NotificationBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* NotificationBase.swift */; };
+		OBJ_161 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* Object.swift */; };
+		OBJ_162 /* ObjectBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* ObjectBase.swift */; };
+		OBJ_163 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* PageControl.swift */; };
+		OBJ_164 /* PageControlBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* PageControlBase.swift */; };
+		OBJ_165 /* PanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* PanGestureRecognizer.swift */; };
+		OBJ_166 /* PanGestureRecognizerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* PanGestureRecognizerBase.swift */; };
+		OBJ_167 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* PickerView.swift */; };
+		OBJ_168 /* PickerViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* PickerViewBase.swift */; };
+		OBJ_169 /* PinchGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* PinchGestureRecognizer.swift */; };
+		OBJ_170 /* PinchGestureRecognizerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* PinchGestureRecognizerBase.swift */; };
+		OBJ_171 /* PlanetUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* PlanetUI.swift */; };
+		OBJ_172 /* PlanetUIBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* PlanetUIBase.swift */; };
+		OBJ_173 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* Scene.swift */; };
+		OBJ_174 /* SceneBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* SceneBase.swift */; };
+		OBJ_175 /* ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* ScrollView.swift */; };
+		OBJ_176 /* ScrollViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* ScrollViewBase.swift */; };
+		OBJ_177 /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* SegmentedControl.swift */; };
+		OBJ_178 /* SegmentedControlBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* SegmentedControlBase.swift */; };
+		OBJ_179 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* StackView.swift */; };
+		OBJ_180 /* StackViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* StackViewBase.swift */; };
+		OBJ_181 /* Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* Switch.swift */; };
+		OBJ_182 /* SwitchBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* SwitchBase.swift */; };
+		OBJ_183 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* TextField.swift */; };
+		OBJ_184 /* TextFieldBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* TextFieldBase.swift */; };
+		OBJ_185 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* TextView.swift */; };
+		OBJ_186 /* TextViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* TextViewBase.swift */; };
+		OBJ_187 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* View.swift */; };
+		OBJ_188 /* ViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* ViewBase.swift */; };
+		OBJ_189 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* VisualEffectView.swift */; };
+		OBJ_190 /* VisualEffectViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* VisualEffectViewBase.swift */; };
+		OBJ_191 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* WebView.swift */; };
+		OBJ_192 /* WebViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* WebViewBase.swift */; };
+		OBJ_193 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* ImageCache.swift */; };
+		OBJ_194 /* NotificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* NotificationHandler.swift */; };
+		OBJ_195 /* PlanetCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_77 /* PlanetCollectionViewController.swift */; };
+		OBJ_196 /* PlanetSwiftConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_78 /* PlanetSwiftConfiguration.swift */; };
+		OBJ_197 /* PlanetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_79 /* PlanetViewController.swift */; };
+		OBJ_198 /* PlanetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_81 /* PlanetButton.swift */; };
+		OBJ_199 /* PlanetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_82 /* PlanetLabel.swift */; };
+		OBJ_200 /* PlanetNetworkImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_83 /* PlanetNetworkImageView.swift */; };
+		OBJ_201 /* PlanetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_84 /* PlanetView.swift */; };
+		OBJ_203 /* AEXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AEXML::AEXML::Product" /* AEXML.framework */; };
+		OBJ_210 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_221 /* PlanetSwiftConstraintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_88 /* PlanetSwiftConstraintTests.swift */; };
+		OBJ_222 /* PlanetSwiftLabelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_89 /* PlanetSwiftLabelTests.swift */; };
+		OBJ_223 /* PlanetSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_90 /* PlanetSwiftTests.swift */; };
+		OBJ_224 /* PlanetSwiftViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_91 /* PlanetSwiftViewTests.swift */; };
+		OBJ_226 /* AEXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AEXML::AEXML::Product" /* AEXML.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4624E93F24917D5700394D61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AEXML::AEXML";
+			remoteInfo = AEXML;
+		};
+		4624E94024917D5800394D61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AEXML::AEXML";
+			remoteInfo = AEXML;
+		};
+		4624E94224917DA900394D61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "PlanetSwift::PlanetSwiftTests";
+			remoteInfo = PlanetSwiftTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		"AEXML::AEXML::Product" /* AEXML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AEXML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_10 /* PlanetSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlanetSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		OBJ_100 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Volumes/Development/Development/smallplanet/planetswift/PlanetSwift/.build/checkouts/AEXML/Package.swift; sourceTree = "<group>"; };
+		OBJ_105 /* Tools */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Tools; sourceTree = SOURCE_ROOT; };
+		OBJ_106 /* XMLSchema */ = {isa = PBXFileReference; lastKnownFileType = folder; path = XMLSchema; sourceTree = SOURCE_ROOT; };
+		OBJ_107 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		OBJ_108 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		OBJ_109 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_11 /* PlanetSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlanetSwift.h; sourceTree = "<group>"; };
+		OBJ_13 /* Gaxb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gaxb.swift; sourceTree = "<group>"; };
+		OBJ_14 /* GaxbTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaxbTypes.swift; sourceTree = "<group>"; };
+		OBJ_15 /* String+Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Bundle.swift"; sourceTree = "<group>"; };
+		OBJ_17 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		OBJ_18 /* ActivityIndicatorViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorViewBase.swift; sourceTree = "<group>"; };
+		OBJ_19 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		OBJ_20 /* ButtonBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBase.swift; sourceTree = "<group>"; };
+		OBJ_21 /* Code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Code.swift; sourceTree = "<group>"; };
+		OBJ_22 /* CodeBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeBase.swift; sourceTree = "<group>"; };
+		OBJ_23 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		OBJ_24 /* CollectionViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewBase.swift; sourceTree = "<group>"; };
+		OBJ_25 /* Constraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
+		OBJ_26 /* ConstraintBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintBase.swift; sourceTree = "<group>"; };
+		OBJ_27 /* Control.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Control.swift; sourceTree = "<group>"; };
+		OBJ_28 /* ControlBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlBase.swift; sourceTree = "<group>"; };
+		OBJ_29 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		OBJ_30 /* ControllerBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerBase.swift; sourceTree = "<group>"; };
+		OBJ_31 /* DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
+		OBJ_32 /* DatePickerBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerBase.swift; sourceTree = "<group>"; };
+		OBJ_33 /* GestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureRecognizer.swift; sourceTree = "<group>"; };
+		OBJ_34 /* GestureRecognizerBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureRecognizerBase.swift; sourceTree = "<group>"; };
+		OBJ_35 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		OBJ_36 /* ImageViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewBase.swift; sourceTree = "<group>"; };
+		OBJ_37 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		OBJ_38 /* LabelBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelBase.swift; sourceTree = "<group>"; };
+		OBJ_39 /* NetworkImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImageView.swift; sourceTree = "<group>"; };
+		OBJ_40 /* NetworkImageViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImageViewBase.swift; sourceTree = "<group>"; };
+		OBJ_41 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		OBJ_42 /* NotificationBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationBase.swift; sourceTree = "<group>"; };
+		OBJ_43 /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
+		OBJ_44 /* ObjectBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectBase.swift; sourceTree = "<group>"; };
+		OBJ_45 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		OBJ_46 /* PageControlBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlBase.swift; sourceTree = "<group>"; };
+		OBJ_47 /* PanGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanGestureRecognizer.swift; sourceTree = "<group>"; };
+		OBJ_48 /* PanGestureRecognizerBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanGestureRecognizerBase.swift; sourceTree = "<group>"; };
+		OBJ_49 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		OBJ_50 /* PickerViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewBase.swift; sourceTree = "<group>"; };
+		OBJ_51 /* PinchGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchGestureRecognizer.swift; sourceTree = "<group>"; };
+		OBJ_52 /* PinchGestureRecognizerBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchGestureRecognizerBase.swift; sourceTree = "<group>"; };
+		OBJ_53 /* PlanetUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetUI.swift; sourceTree = "<group>"; };
+		OBJ_54 /* PlanetUIBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetUIBase.swift; sourceTree = "<group>"; };
+		OBJ_55 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		OBJ_56 /* SceneBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneBase.swift; sourceTree = "<group>"; };
+		OBJ_57 /* ScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollView.swift; sourceTree = "<group>"; };
+		OBJ_58 /* ScrollViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewBase.swift; sourceTree = "<group>"; };
+		OBJ_59 /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_60 /* SegmentedControlBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlBase.swift; sourceTree = "<group>"; };
+		OBJ_61 /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
+		OBJ_62 /* StackViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewBase.swift; sourceTree = "<group>"; };
+		OBJ_63 /* Switch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switch.swift; sourceTree = "<group>"; };
+		OBJ_64 /* SwitchBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchBase.swift; sourceTree = "<group>"; };
+		OBJ_65 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		OBJ_66 /* TextFieldBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldBase.swift; sourceTree = "<group>"; };
+		OBJ_67 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		OBJ_68 /* TextViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewBase.swift; sourceTree = "<group>"; };
+		OBJ_69 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		OBJ_70 /* ViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBase.swift; sourceTree = "<group>"; };
+		OBJ_71 /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
+		OBJ_72 /* VisualEffectViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectViewBase.swift; sourceTree = "<group>"; };
+		OBJ_73 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		OBJ_74 /* WebViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewBase.swift; sourceTree = "<group>"; };
+		OBJ_75 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		OBJ_76 /* NotificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationHandler.swift; sourceTree = "<group>"; };
+		OBJ_77 /* PlanetCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCollectionViewController.swift; sourceTree = "<group>"; };
+		OBJ_78 /* PlanetSwiftConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetSwiftConfiguration.swift; sourceTree = "<group>"; };
+		OBJ_79 /* PlanetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetViewController.swift; sourceTree = "<group>"; };
+		OBJ_81 /* PlanetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetButton.swift; sourceTree = "<group>"; };
+		OBJ_82 /* PlanetLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetLabel.swift; sourceTree = "<group>"; };
+		OBJ_83 /* PlanetNetworkImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetNetworkImageView.swift; sourceTree = "<group>"; };
+		OBJ_84 /* PlanetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetView.swift; sourceTree = "<group>"; };
+		OBJ_87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		OBJ_88 /* PlanetSwiftConstraintTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetSwiftConstraintTests.swift; sourceTree = "<group>"; };
+		OBJ_89 /* PlanetSwiftLabelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetSwiftLabelTests.swift; sourceTree = "<group>"; };
+		OBJ_9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		OBJ_90 /* PlanetSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetSwiftTests.swift; sourceTree = "<group>"; };
+		OBJ_91 /* PlanetSwiftViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetSwiftViewTests.swift; sourceTree = "<group>"; };
+		OBJ_95 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		OBJ_96 /* Element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
+		OBJ_97 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		OBJ_98 /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		OBJ_99 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		"PlanetSwift::PlanetSwift::Product" /* PlanetSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PlanetSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"PlanetSwift::PlanetSwiftTests::Product" /* PlanetSwiftTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlanetSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_120 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_202 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_203 /* AEXML.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_225 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_226 /* AEXML.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		OBJ_101 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"AEXML::AEXML::Product" /* AEXML.framework */,
+				"PlanetSwift::PlanetSwift::Product" /* PlanetSwift.framework */,
+				"PlanetSwift::PlanetSwiftTests::Product" /* PlanetSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_12 /* GaxbTypes */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_13 /* Gaxb.swift */,
+				OBJ_14 /* GaxbTypes.swift */,
+				OBJ_15 /* String+Bundle.swift */,
+			);
+			path = GaxbTypes;
+			sourceTree = "<group>";
+		};
+		OBJ_16 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_17 /* ActivityIndicatorView.swift */,
+				OBJ_18 /* ActivityIndicatorViewBase.swift */,
+				OBJ_19 /* Button.swift */,
+				OBJ_20 /* ButtonBase.swift */,
+				OBJ_21 /* Code.swift */,
+				OBJ_22 /* CodeBase.swift */,
+				OBJ_23 /* CollectionView.swift */,
+				OBJ_24 /* CollectionViewBase.swift */,
+				OBJ_25 /* Constraint.swift */,
+				OBJ_26 /* ConstraintBase.swift */,
+				OBJ_27 /* Control.swift */,
+				OBJ_28 /* ControlBase.swift */,
+				OBJ_29 /* Controller.swift */,
+				OBJ_30 /* ControllerBase.swift */,
+				OBJ_31 /* DatePicker.swift */,
+				OBJ_32 /* DatePickerBase.swift */,
+				OBJ_33 /* GestureRecognizer.swift */,
+				OBJ_34 /* GestureRecognizerBase.swift */,
+				OBJ_35 /* ImageView.swift */,
+				OBJ_36 /* ImageViewBase.swift */,
+				OBJ_37 /* Label.swift */,
+				OBJ_38 /* LabelBase.swift */,
+				OBJ_39 /* NetworkImageView.swift */,
+				OBJ_40 /* NetworkImageViewBase.swift */,
+				OBJ_41 /* Notification.swift */,
+				OBJ_42 /* NotificationBase.swift */,
+				OBJ_43 /* Object.swift */,
+				OBJ_44 /* ObjectBase.swift */,
+				OBJ_45 /* PageControl.swift */,
+				OBJ_46 /* PageControlBase.swift */,
+				OBJ_47 /* PanGestureRecognizer.swift */,
+				OBJ_48 /* PanGestureRecognizerBase.swift */,
+				OBJ_49 /* PickerView.swift */,
+				OBJ_50 /* PickerViewBase.swift */,
+				OBJ_51 /* PinchGestureRecognizer.swift */,
+				OBJ_52 /* PinchGestureRecognizerBase.swift */,
+				OBJ_53 /* PlanetUI.swift */,
+				OBJ_54 /* PlanetUIBase.swift */,
+				OBJ_55 /* Scene.swift */,
+				OBJ_56 /* SceneBase.swift */,
+				OBJ_57 /* ScrollView.swift */,
+				OBJ_58 /* ScrollViewBase.swift */,
+				OBJ_59 /* SegmentedControl.swift */,
+				OBJ_60 /* SegmentedControlBase.swift */,
+				OBJ_61 /* StackView.swift */,
+				OBJ_62 /* StackViewBase.swift */,
+				OBJ_63 /* Switch.swift */,
+				OBJ_64 /* SwitchBase.swift */,
+				OBJ_65 /* TextField.swift */,
+				OBJ_66 /* TextFieldBase.swift */,
+				OBJ_67 /* TextView.swift */,
+				OBJ_68 /* TextViewBase.swift */,
+				OBJ_69 /* View.swift */,
+				OBJ_70 /* ViewBase.swift */,
+				OBJ_71 /* VisualEffectView.swift */,
+				OBJ_72 /* VisualEffectViewBase.swift */,
+				OBJ_73 /* WebView.swift */,
+				OBJ_74 /* WebViewBase.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_85 /* Tests */,
+				OBJ_92 /* Dependencies */,
+				OBJ_101 /* Products */,
+				OBJ_105 /* Tools */,
+				OBJ_106 /* XMLSchema */,
+				OBJ_107 /* LICENSE */,
+				OBJ_108 /* Makefile */,
+				OBJ_109 /* README.md */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* PlanetSwift */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* PlanetSwift */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* Info.plist */,
+				OBJ_10 /* PlanetSwift-Bridging-Header.h */,
+				OBJ_11 /* PlanetSwift.h */,
+				OBJ_12 /* GaxbTypes */,
+				OBJ_16 /* Generated */,
+				OBJ_75 /* ImageCache.swift */,
+				OBJ_76 /* NotificationHandler.swift */,
+				OBJ_77 /* PlanetCollectionViewController.swift */,
+				OBJ_78 /* PlanetSwiftConfiguration.swift */,
+				OBJ_79 /* PlanetViewController.swift */,
+				OBJ_80 /* Views */,
+			);
+			name = PlanetSwift;
+			path = Sources/PlanetSwift;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_80 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_81 /* PlanetButton.swift */,
+				OBJ_82 /* PlanetLabel.swift */,
+				OBJ_83 /* PlanetNetworkImageView.swift */,
+				OBJ_84 /* PlanetView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		OBJ_85 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_86 /* PlanetSwiftTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_86 /* PlanetSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_87 /* Info.plist */,
+				OBJ_88 /* PlanetSwiftConstraintTests.swift */,
+				OBJ_89 /* PlanetSwiftLabelTests.swift */,
+				OBJ_90 /* PlanetSwiftTests.swift */,
+				OBJ_91 /* PlanetSwiftViewTests.swift */,
+			);
+			name = PlanetSwiftTests;
+			path = Tests/PlanetSwiftTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_92 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_93 /* AEXML */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		OBJ_93 /* AEXML */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_94 /* AEXML */,
+				OBJ_100 /* Package.swift */,
+			);
+			name = AEXML;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_94 /* AEXML */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_95 /* Document.swift */,
+				OBJ_96 /* Element.swift */,
+				OBJ_97 /* Error.swift */,
+				OBJ_98 /* Options.swift */,
+				OBJ_99 /* Parser.swift */,
+			);
+			name = AEXML;
+			path = .build/checkouts/AEXML/Sources/AEXML;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"AEXML::AEXML" /* AEXML */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_111 /* Build configuration list for PBXNativeTarget "AEXML" */;
+			buildPhases = (
+				OBJ_114 /* Sources */,
+				OBJ_120 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AEXML;
+			productName = AEXML;
+			productReference = "AEXML::AEXML::Product" /* AEXML.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"AEXML::SwiftPMPackageDescription" /* AEXMLPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_122 /* Build configuration list for PBXNativeTarget "AEXMLPackageDescription" */;
+			buildPhases = (
+				OBJ_125 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AEXMLPackageDescription;
+			productName = AEXMLPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"PlanetSwift::PlanetSwift" /* PlanetSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_128 /* Build configuration list for PBXNativeTarget "PlanetSwift" */;
+			buildPhases = (
+				4624E94124917D9E00394D61 /* SwiftLint */,
+				OBJ_131 /* Sources */,
+				OBJ_202 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_204 /* PBXTargetDependency */,
+			);
+			name = PlanetSwift;
+			productName = PlanetSwift;
+			productReference = "PlanetSwift::PlanetSwift::Product" /* PlanetSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"PlanetSwift::PlanetSwiftTests" /* PlanetSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_217 /* Build configuration list for PBXNativeTarget "PlanetSwiftTests" */;
+			buildPhases = (
+				OBJ_220 /* Sources */,
+				OBJ_225 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_227 /* PBXTargetDependency */,
+			);
+			name = PlanetSwiftTests;
+			productName = PlanetSwiftTests;
+			productReference = "PlanetSwift::PlanetSwiftTests::Product" /* PlanetSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"PlanetSwift::SwiftPMPackageDescription" /* PlanetSwiftPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_206 /* Build configuration list for PBXNativeTarget "PlanetSwiftPackageDescription" */;
+			buildPhases = (
+				OBJ_209 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlanetSwiftPackageDescription;
+			productName = PlanetSwiftPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "PlanetSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5 /*  */;
+			productRefGroup = OBJ_101 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"AEXML::AEXML" /* AEXML */,
+				"AEXML::SwiftPMPackageDescription" /* AEXMLPackageDescription */,
+				"PlanetSwift::PlanetSwift" /* PlanetSwift */,
+				"PlanetSwift::SwiftPMPackageDescription" /* PlanetSwiftPackageDescription */,
+				"PlanetSwift::PlanetSwiftPackageTests::ProductTarget" /* PlanetSwiftPackageTests */,
+				"PlanetSwift::PlanetSwiftTests" /* PlanetSwiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4624E94124917D9E00394D61 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint --path ${SRCROOT}/Sources/PlanetSwift\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_114 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_115 /* Document.swift in Sources */,
+				OBJ_116 /* Element.swift in Sources */,
+				OBJ_117 /* Error.swift in Sources */,
+				OBJ_118 /* Options.swift in Sources */,
+				OBJ_119 /* Parser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_125 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_126 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_131 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_132 /* Gaxb.swift in Sources */,
+				OBJ_133 /* GaxbTypes.swift in Sources */,
+				OBJ_134 /* String+Bundle.swift in Sources */,
+				OBJ_135 /* ActivityIndicatorView.swift in Sources */,
+				OBJ_136 /* ActivityIndicatorViewBase.swift in Sources */,
+				OBJ_137 /* Button.swift in Sources */,
+				OBJ_138 /* ButtonBase.swift in Sources */,
+				OBJ_139 /* Code.swift in Sources */,
+				OBJ_140 /* CodeBase.swift in Sources */,
+				OBJ_141 /* CollectionView.swift in Sources */,
+				OBJ_142 /* CollectionViewBase.swift in Sources */,
+				OBJ_143 /* Constraint.swift in Sources */,
+				OBJ_144 /* ConstraintBase.swift in Sources */,
+				OBJ_145 /* Control.swift in Sources */,
+				OBJ_146 /* ControlBase.swift in Sources */,
+				OBJ_147 /* Controller.swift in Sources */,
+				OBJ_148 /* ControllerBase.swift in Sources */,
+				OBJ_149 /* DatePicker.swift in Sources */,
+				OBJ_150 /* DatePickerBase.swift in Sources */,
+				OBJ_151 /* GestureRecognizer.swift in Sources */,
+				OBJ_152 /* GestureRecognizerBase.swift in Sources */,
+				OBJ_153 /* ImageView.swift in Sources */,
+				OBJ_154 /* ImageViewBase.swift in Sources */,
+				OBJ_155 /* Label.swift in Sources */,
+				OBJ_156 /* LabelBase.swift in Sources */,
+				OBJ_157 /* NetworkImageView.swift in Sources */,
+				OBJ_158 /* NetworkImageViewBase.swift in Sources */,
+				OBJ_159 /* Notification.swift in Sources */,
+				OBJ_160 /* NotificationBase.swift in Sources */,
+				OBJ_161 /* Object.swift in Sources */,
+				OBJ_162 /* ObjectBase.swift in Sources */,
+				OBJ_163 /* PageControl.swift in Sources */,
+				OBJ_164 /* PageControlBase.swift in Sources */,
+				OBJ_165 /* PanGestureRecognizer.swift in Sources */,
+				OBJ_166 /* PanGestureRecognizerBase.swift in Sources */,
+				OBJ_167 /* PickerView.swift in Sources */,
+				OBJ_168 /* PickerViewBase.swift in Sources */,
+				OBJ_169 /* PinchGestureRecognizer.swift in Sources */,
+				OBJ_170 /* PinchGestureRecognizerBase.swift in Sources */,
+				OBJ_171 /* PlanetUI.swift in Sources */,
+				OBJ_172 /* PlanetUIBase.swift in Sources */,
+				OBJ_173 /* Scene.swift in Sources */,
+				OBJ_174 /* SceneBase.swift in Sources */,
+				OBJ_175 /* ScrollView.swift in Sources */,
+				OBJ_176 /* ScrollViewBase.swift in Sources */,
+				OBJ_177 /* SegmentedControl.swift in Sources */,
+				OBJ_178 /* SegmentedControlBase.swift in Sources */,
+				OBJ_179 /* StackView.swift in Sources */,
+				OBJ_180 /* StackViewBase.swift in Sources */,
+				OBJ_181 /* Switch.swift in Sources */,
+				OBJ_182 /* SwitchBase.swift in Sources */,
+				OBJ_183 /* TextField.swift in Sources */,
+				OBJ_184 /* TextFieldBase.swift in Sources */,
+				OBJ_185 /* TextView.swift in Sources */,
+				OBJ_186 /* TextViewBase.swift in Sources */,
+				OBJ_187 /* View.swift in Sources */,
+				OBJ_188 /* ViewBase.swift in Sources */,
+				OBJ_189 /* VisualEffectView.swift in Sources */,
+				OBJ_190 /* VisualEffectViewBase.swift in Sources */,
+				OBJ_191 /* WebView.swift in Sources */,
+				OBJ_192 /* WebViewBase.swift in Sources */,
+				OBJ_193 /* ImageCache.swift in Sources */,
+				OBJ_194 /* NotificationHandler.swift in Sources */,
+				OBJ_195 /* PlanetCollectionViewController.swift in Sources */,
+				OBJ_196 /* PlanetSwiftConfiguration.swift in Sources */,
+				OBJ_197 /* PlanetViewController.swift in Sources */,
+				OBJ_198 /* PlanetButton.swift in Sources */,
+				OBJ_199 /* PlanetLabel.swift in Sources */,
+				OBJ_200 /* PlanetNetworkImageView.swift in Sources */,
+				OBJ_201 /* PlanetView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_209 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_210 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_220 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_221 /* PlanetSwiftConstraintTests.swift in Sources */,
+				OBJ_222 /* PlanetSwiftLabelTests.swift in Sources */,
+				OBJ_223 /* PlanetSwiftTests.swift in Sources */,
+				OBJ_224 /* PlanetSwiftViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_204 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AEXML::AEXML" /* AEXML */;
+			targetProxy = 4624E93F24917D5700394D61 /* PBXContainerItemProxy */;
+		};
+		OBJ_215 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "PlanetSwift::PlanetSwiftTests" /* PlanetSwiftTests */;
+			targetProxy = 4624E94224917DA900394D61 /* PBXContainerItemProxy */;
+		};
+		OBJ_227 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AEXML::AEXML" /* AEXML */;
+			targetProxy = 4624E94024917D5800394D61 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_112 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PlanetSwift.xcodeproj/AEXML_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = AEXML;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = AEXML;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		OBJ_113 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PlanetSwift.xcodeproj/AEXML_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = AEXML;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = AEXML;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		OBJ_123 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_124 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PlanetSwift.xcodeproj/PlanetSwift_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = PlanetSwift;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = PlanetSwift;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PlanetSwift.xcodeproj/PlanetSwift_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = PlanetSwift;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = PlanetSwift;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_207 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_208 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_213 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_218 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PlanetSwift.xcodeproj/PlanetSwiftTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = PlanetSwiftTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_219 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PlanetSwift.xcodeproj/PlanetSwiftTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = PlanetSwiftTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_111 /* Build configuration list for PBXNativeTarget "AEXML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_112 /* Debug */,
+				OBJ_113 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_122 /* Build configuration list for PBXNativeTarget "AEXMLPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_123 /* Debug */,
+				OBJ_124 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_128 /* Build configuration list for PBXNativeTarget "PlanetSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_129 /* Debug */,
+				OBJ_130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "PlanetSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_206 /* Build configuration list for PBXNativeTarget "PlanetSwiftPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_207 /* Debug */,
+				OBJ_208 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_212 /* Build configuration list for PBXAggregateTarget "PlanetSwiftPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_213 /* Debug */,
+				OBJ_214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_217 /* Build configuration list for PBXNativeTarget "PlanetSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_218 /* Debug */,
+				OBJ_219 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
 }

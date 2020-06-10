@@ -9,28 +9,32 @@
 import UIKit
 
 public class PlanetNetworkImageView: UIImageView {
-    
-    public var placeholderContentMode:UIView.ContentMode = .scaleToFill
-    public var downloadedContentMode:UIView.ContentMode = .scaleToFill
-    
-    public func setImageWithPath(_ path: String?, placeholder:UIImage? = nil, completion:((_ success:Bool)->Void)? = nil) {
+
+    public var placeholderContentMode: UIView.ContentMode = .scaleToFill
+    public var downloadedContentMode: UIView.ContentMode = .scaleToFill
+
+    public func setImageWithPath(_ path: String?,
+                                 placeholder: UIImage? = nil,
+                                 completion: ((_ success: Bool) -> Void)? = nil) {
         guard let urlPath = path, let url = NSURL(string: urlPath) else {
             setImage(nil, placeholder: placeholder, completion: completion)
             return
         }
-        
+
         setImage(url as URL, placeholder: placeholder, completion: completion)
     }
-    
-    public func setImage(_ imageUrl: URL?, placeholder: UIImage? = nil, completion: ((_ success:Bool)->Void)? = nil) {
+
+    public func setImage(_ imageUrl: URL?,
+                         placeholder: UIImage? = nil,
+                         completion: ((_ success: Bool) -> Void)? = nil) {
         contentMode = placeholderContentMode
         image = placeholder
-        
+
         guard let imageUrl = imageUrl else {
             completion?(false)
             return
         }
-        
+
         ImageCache.sharedInstance.get(imageUrl) { [weak self] (image: UIImage?) in
             if let image = image {
                 if let downloadedContentMode = self?.downloadedContentMode {
@@ -43,5 +47,5 @@ public class PlanetNetworkImageView: UIImageView {
             }
         }
     }
-    
+
 }

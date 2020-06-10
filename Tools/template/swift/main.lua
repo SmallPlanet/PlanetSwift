@@ -25,9 +25,9 @@ function printAllKeys(t)
 		v = t[k];
 
 		if(type(v) ~= "userdata") then
-			print(k.." : "..type(v).." = "..tostring(v))
+			print(k..": "..type(v).." = "..tostring(v))
 		else
-			print(k.." : "..type(v))
+			print(k..": "..type(v))
 		end
 	end
 	print("===============")

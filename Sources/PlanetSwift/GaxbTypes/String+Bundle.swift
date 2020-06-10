@@ -9,8 +9,8 @@
 import Foundation
 
 extension String {
-	
-	public init(bundlePath:String) {
+
+	public init(bundlePath: String) {
 		self.init()
         let pathComponents = bundlePath.components(separatedBy: ":/")
         switch pathComponents[0] {
@@ -28,5 +28,5 @@ extension String {
             self = bundlePath
         }
 	}
-	
+
 }

@@ -5,8 +5,9 @@
 import UIKit
 
 open class Control: ControlBase {
-	
-	public var control:UIControl?
+
+	public var control: UIControl?
+
 	override open var view: UIView {
 		get {
 			return control ?? super.view
@@ -17,12 +18,12 @@ open class Control: ControlBase {
 			}
 		}
 	}
-	
+
 	open override func gaxbPrepare() {
 		super.gaxbPrepare()
-		
+
         guard let control = control else { return }
-        
+
         if let enabled = enabled {
             control.isEnabled = enabled
         }
