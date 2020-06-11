@@ -460,6 +460,21 @@
 			</extension>
 		</complexContent>
 	</complexType>
+    
+    <element name="Slider" type="ui:Slider" />
+    <complexType name="Slider">
+        <annotation>
+        </annotation>
+        <complexContent>
+            <extension base="ui:Control">
+                <attribute name="minValue" type="float" default="0.0" />
+                <attribute name="maxValue" type="float" default="1.0" />
+                <attribute name="minImage" type="string" />
+                <attribute name="maxImage" type="string" />
+                <attribute name="isContinuous" type="boolean" default="true" />
+            </extension>
+        </complexContent>
+    </complexType>
 
 	<element name="GestureRecognizer" type="ui:GestureRecognizer" />
 	<complexType name="GestureRecognizer">
