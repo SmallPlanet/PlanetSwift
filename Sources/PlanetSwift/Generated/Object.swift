@@ -10,6 +10,8 @@ var styles: Object?
 
 // workaround for inability to specify the XML load call inline here
 private var attemptedStylesLoad = false
+
+@dynamicMemberLookup
 open class Object: ObjectBase {
 
     // MARK: - ID mappings
@@ -35,6 +37,10 @@ open class Object: ObjectBase {
 
     public func setObjectForId(_ identifier: String, object: Object) {
         idMappings[identifier] = NSValue(nonretainedObject: object)
+    }
+    
+    public subscript<T>(dynamicMember member: String) -> T {
+      return objectForId(member) as! T
     }
 
     // MARK: - scoping
