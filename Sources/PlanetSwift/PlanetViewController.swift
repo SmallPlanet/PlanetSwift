@@ -80,6 +80,12 @@ open class PlanetViewController: UIViewController {
         }
 
         self.anchorageAction = anchorage
+        
+        let mirror = Mirror(reflecting: self)
+        var validKeys:[String:Bool] = [:]
+        for case let (label?, _) in mirror.children {
+            validKeys[label] = true
+        }
 
         // we cannot just iterate over the idMappings because the ordering is
         // not garaunteed, therefor we walk over them in XML order
@@ -92,8 +98,14 @@ open class PlanetViewController: UIViewController {
                             if let idx = ppp.subviews.firstIndex(of: vvv) {
                                 let prev: UIView? = idx > 0 ? ppp.subviews[idx-1] : nil
                                 let next: UIView? = idx < ppp.subviews.count-1 ? ppp.subviews[idx+1] : nil
+                                if validKeys[objectID] != nil {
+                                    setValue(vvv, forKey: objectID)
+                                }
                                 anchorage(objectID, vvv, ppp, prev, next, idMappings)
                             } else {
+                                if validKeys[objectID] != nil {
+                                    setValue(vvv, forKey: objectID)
+                                }
                                 anchorage(objectID, vvv, ppp, nil, nil, idMappings)
                             }
                         }
