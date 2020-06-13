@@ -93,20 +93,20 @@ open class PlanetViewController: UIViewController {
             mainXmlView.visit {
                 if let mmm = ($0 as? View) {
                     if let objectID = mmm.id {
-                        let vvv = mmm.view
-                        if let ppp = vvv.superview {
-                            if let idx = ppp.subviews.firstIndex(of: vvv) {
-                                let prev: UIView? = idx > 0 ? ppp.subviews[idx-1] : nil
-                                let next: UIView? = idx < ppp.subviews.count-1 ? ppp.subviews[idx+1] : nil
+                        let view = mmm.view
+                        if let parent = view.superview {
+                            if let idx = parent.subviews.firstIndex(of: view) {
+                                let prev: UIView? = idx > 0 ? parent.subviews[idx-1] : nil
+                                let next: UIView? = idx < parent.subviews.count-1 ? parent.subviews[idx+1] : nil
                                 if validKeys[objectID] != nil {
-                                    setValue(vvv, forKey: objectID)
+                                    setValue(view, forKey: objectID)
                                 }
-                                anchorage(objectID, vvv, ppp, prev, next, idMappings)
+                                anchorage(objectID, view, parent, prev, next, idMappings)
                             } else {
                                 if validKeys[objectID] != nil {
-                                    setValue(vvv, forKey: objectID)
+                                    setValue(view, forKey: objectID)
                                 }
-                                anchorage(objectID, vvv, ppp, nil, nil, idMappings)
+                                anchorage(objectID, view, parent, nil, nil, idMappings)
                             }
                         }
                     }
