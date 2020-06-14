@@ -65,6 +65,13 @@ public extension PlanetCollectionViewCell where Self: UICollectionViewCell {
         }
         contentView.addSubview(xmlView.view)
         xmlView.visit { $0.gaxbDidPrepare() }
+        
+        let mirror = Mirror(reflecting: self)
+        for case let (label?, _) in mirror.children {
+            if let element = xmlView.elementForId(label) as? View {
+                setValue(element.view, forKey: label)
+            }
+        }
 
         addConstraint(NSLayoutConstraint(item: xmlView.view, toItem: contentView, equalAttribute: .width))
         addConstraint(NSLayoutConstraint(item: xmlView.view, toItem: contentView, equalAttribute: .height))
@@ -91,6 +98,13 @@ public extension PlanetCollectionViewCell where Self: UICollectionReusableView {
         }
         addSubview(xmlView.view)
         xmlView.visit { $0.gaxbDidPrepare() }
+        
+        let mirror = Mirror(reflecting: self)
+        for case let (label?, _) in mirror.children {
+            if let element = xmlView.elementForId(label) as? View {
+                setValue(element.view, forKey: label)
+            }
+        }
 
         addConstraint(NSLayoutConstraint(item: xmlView.view, toItem: self, equalAttribute: .width))
         addConstraint(NSLayoutConstraint(item: xmlView.view, toItem: self, equalAttribute: .height))
