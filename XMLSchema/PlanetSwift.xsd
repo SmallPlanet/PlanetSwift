@@ -220,15 +220,11 @@
 	<element name="WebView" type="ui:WebView"/>
 	<complexType name="WebView">
 		<annotation>
-			<appinfo><![CDATA[WebView attributes map to <a href="https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIWebView_Class/index.html" target="_blank">UIWebView</a>]]></appinfo>
+			<appinfo><![CDATA[WebView attributes map to <a href="https://developer.apple.com/documentation/webkit/wkwebview" target="_blank">WKWebView</a>]]></appinfo>
 		</annotation>
 		<complexContent>
 			<extension base="ui:View">
 				<attribute name="url" type="string" />
-				<attribute name="scalesToFit" type="boolean" />
-				<attribute name="suppressesIncrementalRendering" type="boolean" /> <!-- Whether the web view suppresses content rendering until it is fully loaded into memory -->
-				<attribute name="allowsInlineMediaPlayback" type="boolean" /> <!-- Determines whether HTML5 videos play inline or use the native full-screen controller -->
-				<attribute name="mediaPlaybackRequiresUserAction" type="boolean" /> <!-- Determines whether HTML5 videos can play automatically or require the user to start playing them -->
 			</extension>
 		</complexContent>
 	</complexType>

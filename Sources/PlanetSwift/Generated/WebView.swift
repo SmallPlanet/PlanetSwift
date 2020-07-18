@@ -3,16 +3,17 @@
 //
 
 import UIKit
+import WebKit
 
 public class WebView: WebViewBase {
-    lazy public var webview = UIWebView()
+    lazy public var webview = WKWebView()
 
     override open var view: UIView {
         get {
             return webview
         }
         set {
-            if let newValue = newValue as? UIWebView {
+            if let newValue = newValue as? WKWebView {
                 webview = newValue
             }
         }
@@ -20,22 +21,9 @@ public class WebView: WebViewBase {
 
     open override func gaxbPrepare() {
         super.gaxbPrepare()
-
         if let url = url, let requestURL = URL(string: url) {
             let request = URLRequest(url: requestURL)
-            webview.loadRequest(request)
-        }
-        if let scalesToFit = scalesToFit {
-            webview.scalesPageToFit = scalesToFit
-        }
-        if let suppressesIncrementalRendering = suppressesIncrementalRendering {
-            webview.suppressesIncrementalRendering = suppressesIncrementalRendering
-        }
-        if let allowsInlineMediaPlayback = allowsInlineMediaPlayback {
-            webview.allowsInlineMediaPlayback = allowsInlineMediaPlayback
-        }
-        if let mediaPlaybackRequiresUserAction = mediaPlaybackRequiresUserAction {
-            webview.mediaPlaybackRequiresUserAction = mediaPlaybackRequiresUserAction
+            webview.load(request)
         }
     }
 }

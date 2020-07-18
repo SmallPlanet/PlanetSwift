@@ -3,6 +3,7 @@
 //
 
 // swiftlint:disable identifier_name
+// swiftlint:disable force_cast
 
 import UIKit
 
@@ -38,7 +39,7 @@ open class Object: ObjectBase {
     public func setObjectForId(_ identifier: String, object: Object) {
         idMappings[identifier] = NSValue(nonretainedObject: object)
     }
-    
+
     public subscript<T>(dynamicMember member: String) -> T {
       return objectForId(member) as! T
     }

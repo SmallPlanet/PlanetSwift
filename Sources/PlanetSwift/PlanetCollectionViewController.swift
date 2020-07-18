@@ -65,7 +65,7 @@ public extension PlanetCollectionViewCell where Self: UICollectionViewCell {
         }
         contentView.addSubview(xmlView.view)
         xmlView.visit { $0.gaxbDidPrepare() }
-        
+
         let mirror = Mirror(reflecting: self)
         for case let (label?, _) in mirror.children {
             if let element = xmlView.elementForId(label) as? View {
@@ -98,7 +98,7 @@ public extension PlanetCollectionViewCell where Self: UICollectionReusableView {
         }
         addSubview(xmlView.view)
         xmlView.visit { $0.gaxbDidPrepare() }
-        
+
         let mirror = Mirror(reflecting: self)
         for case let (label?, _) in mirror.children {
             if let element = xmlView.elementForId(label) as? View {

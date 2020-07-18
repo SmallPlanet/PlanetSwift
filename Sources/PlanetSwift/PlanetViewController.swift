@@ -7,6 +7,7 @@
 //
 
 // swiftlint:disable line_length
+// swiftlint:disable cyclomatic_complexity
 
 import UIKit
 
@@ -80,9 +81,9 @@ open class PlanetViewController: UIViewController {
         }
 
         self.anchorageAction = anchorage
-        
+
         let mirror = Mirror(reflecting: self)
-        var validKeys:[String:Bool] = [:]
+        var validKeys: [String: Bool] = [:]
         for case let (label?, _) in mirror.children {
             validKeys[label] = true
         }
