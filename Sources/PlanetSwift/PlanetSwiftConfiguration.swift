@@ -12,7 +12,8 @@
 import Foundation
 
 public let planetSwiftConfigurationAllParametersKey = "PlanetSwift"
-public let planetSwiftConfigurationStylesheetPathKey = "styleSheetPath"
+public let planetSwiftConfigurationLightStylesheetPathKey = "styleSheetPath"
+public let planetSwiftConfigurationDarkStylesheetPathKey = "darkStyleSheetPath"
 public let planetSwiftConfigurationConfigPathKey = "configurationPath"
 
 public class PlanetSwiftConfiguration {

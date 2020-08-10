@@ -11,6 +11,7 @@ var styles: Object?
 
 // workaround for inability to specify the XML load call inline here
 private var attemptedStylesLoad = false
+private var stylesLoadedWereLight = false
 
 @dynamicMemberLookup
 open class Object: ObjectBase {
@@ -119,10 +120,25 @@ open class Object: ObjectBase {
     }
 
     public class func styleForId(_ _id: String) -> GaxbElement? {
-        if styles == nil && !attemptedStylesLoad {
+		
+		var stylesToLoadAreLight = true
+		if #available(iOS 12.0, *), UIScreen.main.traitCollection.userInterfaceStyle == .dark {
+			stylesToLoadAreLight = false
+		}
+		
+        if (styles == nil && !attemptedStylesLoad) || stylesToLoadAreLight != stylesLoadedWereLight {
             attemptedStylesLoad = true
-            if let path = PlanetSwiftConfiguration.valueForKey(planetSwiftConfigurationStylesheetPathKey) as? String {
+			
+	        if #available(iOS 12.0, *), UIScreen.main.traitCollection.userInterfaceStyle == .dark {
+                if let path = PlanetSwiftConfiguration.valueForKey(planetSwiftConfigurationDarkStylesheetPathKey) as? String {
+					stylesLoadedWereLight = false
                     loadStyles(path)
+                }
+            }else{
+                if let path = PlanetSwiftConfiguration.valueForKey(planetSwiftConfigurationLightStylesheetPathKey) as? String {
+					stylesLoadedWereLight = true
+                    loadStyles(path)
+                }
             }
         }
 
